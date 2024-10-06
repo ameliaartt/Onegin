@@ -1,0 +1,33 @@
+[remap]
+
+importer="font_data_dynamic"
+type="FontFile"
+uid="uid://hb5j7ekhv0q0"
+path="res://.godot/imported/ofont.ru_Ekaterina Velikaya Two.ttf-e932ff16b45f84564a96733d4f50aa5f.fontdata"
+
+[deps]
+
+source_file="res://Accets/Srift/ofont.ru_Ekaterina Velikaya Two.ttf"
+dest_files=["res://.godot/imported/ofont.ru_Ekaterina Velikaya Two.ttf-e932ff16b45f84564a96733d4f50aa5f.fontdata"]
+
+[params]
+
+Rendering=null
+antialiasing=1
+generate_mipmaps=false
+multichannel_signed_distance_field=false
+msdf_pixel_range=8
+msdf_size=48
+allow_system_fallback=true
+force_autohinter=false
+hinting=1
+subpixel_positioning=1
+oversampling=0.0
+Fallbacks=null
+fallbacks=[]
+Compress=null
+compress=true
+preload=[]
+language_support={}
+script_support={}
+opentype_features={}

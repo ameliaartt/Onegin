@@ -1,0 +1,274 @@
+[gd_scene load_steps=5 format=3 uid="uid://0yf5d20ip5v6"]
+
+[ext_resource type="Script" path="res://Scenes/menu/Load.gd" id="1_6hbg1"]
+[ext_resource type="Texture2D" uid="uid://rjq54hb1fuhw" path="res://Accets/Menu/photo_2024-10-05_21-58-44.jpg" id="1_gvxvy"]
+[ext_resource type="FontFile" uid="uid://bjpq8qwf2cjby" path="res://Accets/Srift/ofont.ru_1 Shelley Volante.ttf" id="2_yedqc"]
+[ext_resource type="FontFile" uid="uid://hb5j7ekhv0q0" path="res://Accets/Srift/ofont.ru_Ekaterina Velikaya Two.ttf" id="3_mc8te"]
+
+[node name="Load" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_6hbg1")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(560, 311)
+scale = Vector2(1.63649, 1.48032)
+texture = ExtResource("1_gvxvy")
+
+[node name="Button" type="Button" parent="."]
+layout_mode = 0
+offset_left = 1018.0
+offset_top = 595.0
+offset_right = 1128.0
+offset_bottom = 639.0
+flat = true
+
+[node name="Node" type="Node" parent="."]
+
+[node name="Label2" type="Label" parent="Node"]
+offset_left = 288.0
+offset_top = 374.0
+offset_right = 515.0
+offset_bottom = 454.0
+rotation = -0.27635
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 1
+theme_override_fonts/font = ExtResource("3_mc8te")
+theme_override_font_sizes/font_size = 39
+text = "Евгений Онегин"
+
+[node name="Label" type="Label" parent="Node"]
+offset_left = 1010.0
+offset_top = 589.0
+offset_right = 1126.0
+offset_bottom = 643.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("2_yedqc")
+theme_override_font_sizes/font_size = 42
+text = "Назад"
+
+[node name="Label3" type="Label" parent="Node"]
+offset_left = 346.0
+offset_top = 416.0
+offset_right = 573.0
+offset_bottom = 496.0
+rotation = -0.27635
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 1
+theme_override_fonts/font = ExtResource("3_mc8te")
+theme_override_font_sizes/font_size = 21
+text = "Роман в стихах"
+
+[node name="Label4" type="Label" parent="Node"]
+offset_left = 503.0
+offset_top = 545.0
+offset_right = 629.0
+offset_bottom = 582.0
+rotation = -0.27635
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 1
+theme_override_fonts/font = ExtResource("3_mc8te")
+theme_override_font_sizes/font_size = 13
+text = "А. С. Пушкин"
+
+[node name="Label5" type="Label" parent="Node"]
+offset_left = 518.0
+offset_top = 180.0
+offset_right = 716.0
+offset_bottom = 243.0
+rotation = -0.27635
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 0
+theme_override_fonts/font = ExtResource("2_yedqc")
+theme_override_font_sizes/font_size = 35
+text = "Содержание"
+horizontal_alignment = 1
+
+[node name="Label6" type="Label" parent="Node"]
+offset_left = 520.0
+offset_top = 229.0
+offset_right = 743.0
+offset_bottom = 292.0
+rotation = -0.295312
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 0
+theme_override_fonts/font = ExtResource("2_yedqc")
+theme_override_font_sizes/font_size = 29
+text = "Глава первая...........  6"
+horizontal_alignment = 1
+
+[node name="Label7" type="Label" parent="Node"]
+offset_left = 531.0
+offset_top = 266.0
+offset_right = 766.0
+offset_bottom = 329.0
+rotation = -0.301041
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 0
+theme_override_fonts/font = ExtResource("2_yedqc")
+theme_override_font_sizes/font_size = 29
+text = "Глава вторая..........  37"
+horizontal_alignment = 1
+
+[node name="Label8" type="Label" parent="Node"]
+offset_left = 543.0
+offset_top = 305.0
+offset_right = 781.0
+offset_bottom = 368.0
+rotation = -0.296982
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 0
+theme_override_fonts/font = ExtResource("2_yedqc")
+theme_override_font_sizes/font_size = 29
+text = "Глава третья..........  59"
+horizontal_alignment = 1
+
+[node name="Label9" type="Label" parent="Node"]
+offset_left = 554.0
+offset_top = 342.0
+offset_right = 792.0
+offset_bottom = 405.0
+rotation = -0.291737
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 0
+theme_override_fonts/font = ExtResource("2_yedqc")
+theme_override_font_sizes/font_size = 29
+text = "Глава четвертая.....  86"
+horizontal_alignment = 1
+
+[node name="Label10" type="Label" parent="Node"]
+offset_left = 566.0
+offset_top = 378.0
+offset_right = 807.0
+offset_bottom = 441.0
+rotation = -0.290589
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 0
+theme_override_fonts/font = ExtResource("2_yedqc")
+theme_override_font_sizes/font_size = 29
+text = "Глава пятая...........  110"
+horizontal_alignment = 1
+
+[node name="Label11" type="Label" parent="Node"]
+offset_left = 577.0
+offset_top = 418.0
+offset_right = 829.0
+offset_bottom = 481.0
+rotation = -0.290589
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 0
+theme_override_fonts/font = ExtResource("2_yedqc")
+theme_override_font_sizes/font_size = 29
+text = "Глава шестая..........  134"
+horizontal_alignment = 1
+
+[node name="Label12" type="Label" parent="Node"]
+offset_left = 589.0
+offset_top = 457.0
+offset_right = 839.0
+offset_bottom = 520.0
+rotation = -0.290589
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 0
+theme_override_fonts/font = ExtResource("2_yedqc")
+theme_override_font_sizes/font_size = 29
+text = "Глава седьмая..........  158"
+horizontal_alignment = 1
+
+[node name="Label13" type="Label" parent="Node"]
+offset_left = 603.0
+offset_top = 495.0
+offset_right = 851.0
+offset_bottom = 558.0
+rotation = -0.290589
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 0
+theme_override_fonts/font = ExtResource("2_yedqc")
+theme_override_font_sizes/font_size = 29
+text = "Глава восьмая..........  188"
+horizontal_alignment = 1
+
+[node name="Node2" type="Node" parent="."]
+
+[node name="level1" type="Button" parent="Node2"]
+offset_left = 517.0
+offset_top = 236.0
+offset_right = 751.0
+offset_bottom = 266.0
+rotation = -0.296192
+flat = true
+
+[node name="level2" type="Button" parent="Node2"]
+offset_left = 530.0
+offset_top = 272.0
+offset_right = 770.0
+offset_bottom = 302.0
+rotation = -0.296192
+flat = true
+
+[node name="level3" type="Button" parent="Node2"]
+offset_left = 544.0
+offset_top = 310.0
+offset_right = 784.0
+offset_bottom = 340.0
+rotation = -0.296192
+flat = true
+
+[node name="level4" type="Button" parent="Node2"]
+offset_left = 554.0
+offset_top = 348.0
+offset_right = 799.0
+offset_bottom = 378.0
+rotation = -0.296192
+flat = true
+
+[node name="level5" type="Button" parent="Node2"]
+offset_left = 564.0
+offset_top = 383.0
+offset_right = 812.0
+offset_bottom = 413.0
+rotation = -0.296192
+flat = true
+
+[node name="level6" type="Button" parent="Node2"]
+offset_left = 579.0
+offset_top = 422.0
+offset_right = 829.0
+offset_bottom = 452.0
+rotation = -0.296192
+flat = true
+
+[node name="level7" type="Button" parent="Node2"]
+offset_left = 590.0
+offset_top = 462.0
+offset_right = 842.0
+offset_bottom = 492.0
+rotation = -0.296192
+flat = true
+
+[node name="level8" type="Button" parent="Node2"]
+offset_left = 602.0
+offset_top = 500.0
+offset_right = 856.0
+offset_bottom = 530.0
+rotation = -0.296192
+flat = true
+
+[connection signal="pressed" from="Button" to="." method="_on_button_pressed"]
+[connection signal="pressed" from="Node2/level1" to="." method="_on_level_1_pressed"]

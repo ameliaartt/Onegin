@@ -1,0 +1,115 @@
+[gd_scene load_steps=5 format=3 uid="uid://cxlkrr15insfg"]
+
+[ext_resource type="Texture2D" uid="uid://cbyrv47ncoftv" path="res://Accets/Menu/photo_2024-10-05_20-13-31.jpg" id="1_1q3m7"]
+[ext_resource type="Script" path="res://Scenes/menu/menu.gd" id="1_r3xce"]
+[ext_resource type="FontFile" uid="uid://bjpq8qwf2cjby" path="res://Accets/Srift/ofont.ru_1 Shelley Volante.ttf" id="2_2a15p"]
+[ext_resource type="FontFile" uid="uid://hb5j7ekhv0q0" path="res://Accets/Srift/ofont.ru_Ekaterina Velikaya Two.ttf" id="3_unfuu"]
+
+[node name="Menu" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_r3xce")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(576, 325)
+scale = Vector2(0.951589, 0.808805)
+texture = ExtResource("1_1q3m7")
+
+[node name="Exit" type="Button" parent="."]
+layout_mode = 2
+offset_left = 24.0
+offset_top = 536.0
+offset_right = 216.0
+offset_bottom = 584.0
+
+[node name="Start" type="Button" parent="."]
+layout_mode = 0
+offset_left = 24.0
+offset_top = 344.0
+offset_right = 216.0
+offset_bottom = 392.0
+
+[node name="Load" type="Button" parent="."]
+layout_mode = 0
+offset_left = 24.0
+offset_top = 408.0
+offset_right = 216.0
+offset_bottom = 456.0
+
+[node name="Endes" type="Button" parent="."]
+layout_mode = 0
+offset_left = 24.0
+offset_top = 472.0
+offset_right = 216.0
+offset_bottom = 520.0
+
+[node name="Node" type="Node" parent="."]
+
+[node name="Label6" type="Label" parent="Node"]
+offset_left = 52.0
+offset_top = 32.0
+offset_right = 471.0
+offset_bottom = 157.0
+theme_override_colors/font_color = Color(0.117647, 0.0745098, 0.00392157, 1)
+theme_override_colors/font_outline_color = Color(0.117647, 0.0745098, 0.00392157, 1)
+theme_override_constants/outline_size = 5
+theme_override_fonts/font = ExtResource("3_unfuu")
+theme_override_font_sizes/font_size = 72
+text = "Евгений Онегин"
+
+[node name="Label5" type="Label" parent="Node"]
+offset_left = 1045.0
+offset_top = 597.0
+offset_right = 1237.0
+offset_bottom = 722.0
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_colors/font_outline_color = Color(1, 1, 1, 1)
+theme_override_constants/outline_size = 2
+theme_override_fonts/font = ExtResource("3_unfuu")
+theme_override_font_sizes/font_size = 43
+text = "ver 0.1"
+
+[node name="Label4" type="Label" parent="Node"]
+offset_left = 35.0
+offset_top = 473.0
+offset_right = 203.0
+offset_bottom = 534.0
+theme_override_fonts/font = ExtResource("2_2a15p")
+theme_override_font_sizes/font_size = 36
+text = "Достижения"
+
+[node name="Label3" type="Label" parent="Node"]
+offset_left = 31.0
+offset_top = 342.0
+offset_right = 204.0
+offset_bottom = 403.0
+theme_override_fonts/font = ExtResource("2_2a15p")
+theme_override_font_sizes/font_size = 35
+text = "Начать игру"
+
+[node name="Label2" type="Label" parent="Node"]
+offset_left = 38.0
+offset_top = 408.0
+offset_right = 201.0
+offset_bottom = 469.0
+theme_override_fonts/font = ExtResource("2_2a15p")
+theme_override_font_sizes/font_size = 38
+text = "Загрузить"
+
+[node name="Label" type="Label" parent="Node"]
+offset_left = 62.0
+offset_top = 532.0
+offset_right = 225.0
+offset_bottom = 593.0
+theme_override_fonts/font = ExtResource("2_2a15p")
+theme_override_font_sizes/font_size = 43
+text = "Выход"
+
+[connection signal="pressed" from="Exit" to="." method="_on_exit_pressed"]
+[connection signal="pressed" from="Start" to="." method="_on_start_pressed"]
+[connection signal="pressed" from="Load" to="." method="_on_load_pressed"]
+[connection signal="pressed" from="Endes" to="." method="_on_endes_pressed"]
