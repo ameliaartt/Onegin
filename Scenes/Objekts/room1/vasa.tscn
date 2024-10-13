@@ -1,0 +1,17 @@
+[gd_scene load_steps=3 format=3 uid="uid://cykjxg5fumw3k"]
+
+[ext_resource type="Texture2D" uid="uid://c0e70mf3wcjbg" path="res://Accets/Rooms/furniture/Vase.png" id="1_1c0v6"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_21vxj"]
+size = Vector2(53, 54)
+
+[node name="book_ctol" type="CharacterBody2D"]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(70.0306, 68.6448)
+scale = Vector2(0.231364, 0.226139)
+texture = ExtResource("1_1c0v6")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(70.5, 56)
+shape = SubResource("RectangleShape2D_21vxj")

@@ -1,0 +1,17 @@
+[gd_scene load_steps=3 format=3 uid="uid://d063ooor6b015"]
+
+[ext_resource type="Texture2D" uid="uid://usv8rba2bfid" path="res://Accets/Rooms/furniture/Knijnaya tymba.png" id="1_o5gmm"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_ek0or"]
+size = Vector2(46, 29)
+
+[node name="book_ctol" type="CharacterBody2D"]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(65.4333, 76.6348)
+scale = Vector2(0.199102, 0.18474)
+texture = ExtResource("1_o5gmm")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(64, 69.5)
+shape = SubResource("RectangleShape2D_ek0or")

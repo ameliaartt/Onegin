@@ -1,0 +1,17 @@
+[gd_scene load_steps=3 format=3 uid="uid://kslqy268fjca"]
+
+[ext_resource type="Texture2D" uid="uid://h6nnqktxxcpo" path="res://Accets/Rooms/furniture/Tymba.png" id="1_six6j"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_835hc"]
+size = Vector2(47, 44.5)
+
+[node name="tymba" type="CharacterBody2D"]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(65.4333, 76.6348)
+scale = Vector2(0.199102, 0.18474)
+texture = ExtResource("1_six6j")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(66.5, 71.75)
+shape = SubResource("RectangleShape2D_835hc")

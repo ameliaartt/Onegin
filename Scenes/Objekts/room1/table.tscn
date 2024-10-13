@@ -1,0 +1,17 @@
+[gd_scene load_steps=3 format=3 uid="uid://qwmknq08fj1k"]
+
+[ext_resource type="Texture2D" uid="uid://cq7hyhvwdochy" path="res://Accets/Rooms/furniture/Table.png" id="1_nc6ug"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_m5m1t"]
+size = Vector2(155.5, 73)
+
+[node name="table" type="CharacterBody2D"]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(89.6522, 89.7972)
+scale = Vector2(0.279297, 0.250388)
+texture = ExtResource("1_nc6ug")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(91.25, 80.5)
+shape = SubResource("RectangleShape2D_m5m1t")

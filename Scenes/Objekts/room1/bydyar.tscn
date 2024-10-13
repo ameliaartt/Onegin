@@ -1,0 +1,17 @@
+[gd_scene load_steps=3 format=3 uid="uid://h412wx5b5pij"]
+
+[ext_resource type="Texture2D" uid="uid://bqmjragd38tl5" path="res://Accets/Rooms/furniture/Bydyar.png" id="1_urb4v"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_ek0or"]
+size = Vector2(74.75, 148)
+
+[node name="bydyar" type="CharacterBody2D"]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(77.5286, 99.8797)
+scale = Vector2(0.330449, 0.342394)
+texture = ExtResource("1_urb4v")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(78.375, 104)
+shape = SubResource("RectangleShape2D_ek0or")

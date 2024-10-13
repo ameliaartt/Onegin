@@ -1,0 +1,17 @@
+[gd_scene load_steps=3 format=3 uid="uid://d0fvunasg4i0v"]
+
+[ext_resource type="Texture2D" uid="uid://ckohj2ybyahox" path="res://Accets/Rooms/furniture/Bed.png" id="1_nf884"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_ek0or"]
+size = Vector2(119.5, 122)
+
+[node name="Bed" type="CharacterBody2D"]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(69.75, 71.5)
+scale = Vector2(0.228171, 0.217868)
+texture = ExtResource("1_nf884")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(71.25, 73)
+shape = SubResource("RectangleShape2D_ek0or")

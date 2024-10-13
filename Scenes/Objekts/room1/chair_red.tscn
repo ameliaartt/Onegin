@@ -1,0 +1,17 @@
+[gd_scene load_steps=3 format=3 uid="uid://b3a40h27rmbks"]
+
+[ext_resource type="Texture2D" uid="uid://dpeb2ouv7tfsi" path="res://Accets/Rooms/furniture/Chair tipo kreslo.png" id="1_2uxpa"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_ek0or"]
+size = Vector2(78, 66)
+
+[node name="chair_red" type="CharacterBody2D"]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(69.75, 71.5)
+scale = Vector2(0.228171, 0.217868)
+texture = ExtResource("1_2uxpa")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(70, 76)
+shape = SubResource("RectangleShape2D_ek0or")
