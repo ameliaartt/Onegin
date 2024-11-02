@@ -1,0 +1,26 @@
+[gd_scene load_steps=6 format=3 uid="uid://dqbgu1hug16xt"]
+
+[ext_resource type="Script" path="res://Music.gd" id="1_kjkhy"]
+[ext_resource type="AudioStream" uid="uid://d0smuviqkbokt" path="res://Music/menu.mp3" id="1_nqawi"]
+[ext_resource type="AudioStream" uid="uid://buutuvjjgni15" path="res://Music/music1.mp3" id="3_knxvm"]
+[ext_resource type="AudioStream" uid="uid://p60s40h2gd5g" path="res://Music/music2.mp3" id="4_3u60i"]
+[ext_resource type="AudioStream" uid="uid://3g35tm6drm87" path="res://Music/music3.mp3" id="5_ndqal"]
+
+[node name="Music" type="Node"]
+script = ExtResource("1_kjkhy")
+
+[node name="Menu" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("1_nqawi")
+volume_db = -42.337
+
+[node name="m1" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("3_knxvm")
+volume_db = -46.017
+
+[node name="m2" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("4_3u60i")
+volume_db = -35.893
+
+[node name="m3" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("5_ndqal")
+volume_db = -46.938

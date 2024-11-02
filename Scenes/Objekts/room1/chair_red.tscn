@@ -1,17 +1,15 @@
-[gd_scene load_steps=3 format=3 uid="uid://b3a40h27rmbks"]
+[gd_scene load_steps=2 format=3 uid="uid://b3a40h27rmbks"]
 
 [ext_resource type="Texture2D" uid="uid://dpeb2ouv7tfsi" path="res://Accets/Rooms/furniture/Chair tipo kreslo.png" id="1_2uxpa"]
-
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_ek0or"]
-size = Vector2(78, 66)
 
 [node name="chair_red" type="CharacterBody2D"]
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
-position = Vector2(69.75, 71.5)
-scale = Vector2(0.228171, 0.217868)
+position = Vector2(85.303, 53.5913)
+scale = Vector2(0.301882, 0.307188)
 texture = ExtResource("1_2uxpa")
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(70, 76)
-shape = SubResource("RectangleShape2D_ek0or")
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="."]
+position = Vector2(-13, -44)
+scale = Vector2(1.39844, 1.34704)
+polygon = PackedVector2Array(40, 63, 40, 48, 44, 41, 53, 37, 75, 37, 89, 37, 99, 46, 100, 65, 108, 66, 110, 89, 109, 103, 102, 103, 102, 112, 96, 111, 92, 106, 71, 106, 47, 106, 46, 113, 38, 112, 36, 105, 33, 89, 30, 84, 31, 70)

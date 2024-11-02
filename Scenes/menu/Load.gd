@@ -18,4 +18,7 @@ func _on_button_pressed():
 
 func _on_level_1_pressed():
 	get_tree().change_scene_to_file("res://Scenes/Levels/level1/glava1.tscn")
+	Music.menu.stop()
+	Music.m3.play()
+	Global.mus = 2
 	pass # Replace with function body.

@@ -3,15 +3,15 @@
 [ext_resource type="Texture2D" uid="uid://cq7hyhvwdochy" path="res://Accets/Rooms/furniture/Table.png" id="1_nc6ug"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_m5m1t"]
-size = Vector2(155.5, 73)
+size = Vector2(188.5, 65)
 
 [node name="table" type="CharacterBody2D"]
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
-position = Vector2(89.6522, 89.7972)
-scale = Vector2(0.279297, 0.250388)
+position = Vector2(110.652, 101.297)
+scale = Vector2(0.348834, 0.307745)
 texture = ExtResource("1_nc6ug")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(91.25, 80.5)
+position = Vector2(113, 81)
 shape = SubResource("RectangleShape2D_m5m1t")

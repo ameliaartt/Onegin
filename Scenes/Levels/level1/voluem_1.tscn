@@ -1,0 +1,50 @@
+[gd_scene load_steps=3 format=3 uid="uid://cnakb2j06nfkc"]
+
+[ext_resource type="Script" path="res://Scenes/Levels/level1/voluem_1.gd" id="1_en4a1"]
+[ext_resource type="FontFile" uid="uid://dmdgi22dt6ytb" path="res://Accets/Srift/ofont.ru_Garamond_A.Z_PS.ttf" id="2_cg7e8"]
+
+[node name="Voluem1" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_en4a1")
+
+[node name="ColorRect" type="ColorRect" parent="."]
+layout_mode = 0
+offset_left = -35.0
+offset_top = -16.0
+offset_right = 1200.0
+offset_bottom = 675.0
+color = Color(0.0770744, 0.0111495, 0.199017, 1)
+
+[node name="Label" type="Label" parent="."]
+layout_mode = 0
+offset_left = 297.0
+offset_top = 62.0
+offset_right = 878.0
+offset_bottom = 598.0
+theme_override_fonts/font = ExtResource("2_cg7e8")
+theme_override_font_sizes/font_size = 48
+text = "Друзья Людмилы и Руслана!
+С героем моего романа
+Без предисловий, сей же час
+Позвольте познакомить вас:
+Онегин, добрый мой приятель,
+Родился на брегах Невы,
+Где, может быть, родились вы
+Или блистали, мой читатель;
+Там некогда гулял и я:
+Но вреден север для меня."
+
+[node name="Button" type="Button" parent="."]
+layout_mode = 0
+offset_left = -8.0
+offset_top = -2.0
+offset_right = 1156.0
+offset_bottom = 649.0
+flat = true
+
+[connection signal="pressed" from="Button" to="." method="_on_button_pressed"]

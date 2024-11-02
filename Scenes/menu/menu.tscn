@@ -29,16 +29,16 @@ offset_bottom = 584.0
 [node name="Start" type="Button" parent="."]
 layout_mode = 0
 offset_left = 24.0
-offset_top = 344.0
+offset_top = 280.0
 offset_right = 216.0
-offset_bottom = 392.0
+offset_bottom = 328.0
 
 [node name="Load" type="Button" parent="."]
 layout_mode = 0
 offset_left = 24.0
-offset_top = 408.0
+offset_top = 344.0
 offset_right = 216.0
-offset_bottom = 456.0
+offset_bottom = 392.0
 
 [node name="Endes" type="Button" parent="."]
 layout_mode = 0
@@ -46,6 +46,13 @@ offset_left = 24.0
 offset_top = 472.0
 offset_right = 216.0
 offset_bottom = 520.0
+
+[node name="Sittings" type="Button" parent="."]
+layout_mode = 0
+offset_left = 24.0
+offset_top = 408.0
+offset_right = 216.0
+offset_bottom = 456.0
 
 [node name="Node" type="Node" parent="."]
 
@@ -83,19 +90,19 @@ theme_override_font_sizes/font_size = 36
 text = "Достижения"
 
 [node name="Label3" type="Label" parent="Node"]
-offset_left = 31.0
-offset_top = 342.0
-offset_right = 204.0
-offset_bottom = 403.0
+offset_left = 32.0
+offset_top = 280.0
+offset_right = 205.0
+offset_bottom = 341.0
 theme_override_fonts/font = ExtResource("2_2a15p")
 theme_override_font_sizes/font_size = 35
 text = "Начать игру"
 
 [node name="Label2" type="Label" parent="Node"]
-offset_left = 38.0
-offset_top = 408.0
-offset_right = 201.0
-offset_bottom = 469.0
+offset_left = 32.0
+offset_top = 344.0
+offset_right = 195.0
+offset_bottom = 405.0
 theme_override_fonts/font = ExtResource("2_2a15p")
 theme_override_font_sizes/font_size = 38
 text = "Загрузить"
@@ -109,7 +116,17 @@ theme_override_fonts/font = ExtResource("2_2a15p")
 theme_override_font_sizes/font_size = 43
 text = "Выход"
 
+[node name="Label7" type="Label" parent="Node"]
+offset_left = 32.0
+offset_top = 408.0
+offset_right = 205.0
+offset_bottom = 469.0
+theme_override_fonts/font = ExtResource("2_2a15p")
+theme_override_font_sizes/font_size = 35
+text = "Настройки"
+
 [connection signal="pressed" from="Exit" to="." method="_on_exit_pressed"]
 [connection signal="pressed" from="Start" to="." method="_on_start_pressed"]
 [connection signal="pressed" from="Load" to="." method="_on_load_pressed"]
 [connection signal="pressed" from="Endes" to="." method="_on_endes_pressed"]
+[connection signal="pressed" from="Sittings" to="." method="_on_sittings_pressed"]

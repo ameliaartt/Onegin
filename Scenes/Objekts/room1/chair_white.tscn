@@ -3,15 +3,15 @@
 [ext_resource type="Texture2D" uid="uid://cwbmddsa4gxk2" path="res://Accets/Rooms/furniture/Chair_bydyar.png" id="1_8tjid"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_ek0or"]
-size = Vector2(42, 51)
+size = Vector2(41, 67.5)
 
 [node name="chair_white" type="CharacterBody2D"]
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
-position = Vector2(69.75, 71.5)
-scale = Vector2(0.228171, 0.217868)
+position = Vector2(80.9735, 92.3347)
+scale = Vector2(0.311308, 0.326382)
 texture = ExtResource("1_8tjid")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(71, 59.5)
+position = Vector2(88.5, 70.25)
 shape = SubResource("RectangleShape2D_ek0or")

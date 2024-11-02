@@ -1,0 +1,62 @@
+[gd_scene load_steps=5 format=3 uid="uid://bt0ftqug0t0t"]
+
+[ext_resource type="Texture2D" uid="uid://blcdvjqf7uubl" path="res://Accets/Carecters/Onegin/Onegin home 1.png" id="2_fyhwn"]
+[ext_resource type="FontFile" uid="uid://dmdgi22dt6ytb" path="res://Accets/Srift/ofont.ru_Garamond_A.Z_PS.ttf" id="2_jlwjh"]
+[ext_resource type="Texture2D" uid="uid://cofafdygtqtbf" path="res://Accets/Menu/dil.png" id="4_c3oy2"]
+[ext_resource type="Texture2D" uid="uid://bls7xe5eok881" path="res://Accets/Menu/cnopca.png" id="5_0r3l4"]
+
+[node name="First" type="Control"]
+layout_mode = 3
+anchors_preset = 0
+
+[node name="con" type="MarginContainer" parent="."]
+layout_mode = 1
+anchors_preset = 12
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -6.0
+offset_top = 512.0
+offset_right = 1161.0
+offset_bottom = 648.0
+grow_horizontal = 2
+grow_vertical = 0
+
+[node name="carect" type="Sprite2D" parent="con"]
+position = Vector2(109, -113)
+scale = Vector2(0.527597, 0.495303)
+texture = ExtResource("2_fyhwn")
+
+[node name="Sprite2D" type="Sprite2D" parent="con"]
+position = Vector2(587, 20)
+scale = Vector2(1.18278, 1.02284)
+texture = ExtResource("4_c3oy2")
+
+[node name="name" type="Label" parent="."]
+layout_mode = 0
+offset_left = 34.0
+offset_top = 448.0
+offset_right = 176.0
+offset_bottom = 490.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("2_jlwjh")
+theme_override_font_sizes/font_size = 40
+
+[node name="Label" type="Label" parent="."]
+layout_mode = 0
+offset_left = 34.0
+offset_top = 508.0
+offset_right = 906.0
+offset_bottom = 589.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("2_jlwjh")
+theme_override_font_sizes/font_size = 40
+
+[node name="Button" type="Button" parent="."]
+layout_mode = 0
+offset_left = 1033.0
+offset_top = 513.0
+offset_right = 1132.0
+offset_bottom = 612.0
+icon = ExtResource("5_0r3l4")
+flat = true

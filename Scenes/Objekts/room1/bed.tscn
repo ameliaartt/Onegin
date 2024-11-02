@@ -1,17 +1,13 @@
-[gd_scene load_steps=3 format=3 uid="uid://d0fvunasg4i0v"]
+[gd_scene load_steps=2 format=3 uid="uid://d0fvunasg4i0v"]
 
 [ext_resource type="Texture2D" uid="uid://ckohj2ybyahox" path="res://Accets/Rooms/furniture/Bed.png" id="1_nf884"]
-
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_ek0or"]
-size = Vector2(119.5, 122)
 
 [node name="Bed" type="CharacterBody2D"]
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
-position = Vector2(69.75, 71.5)
-scale = Vector2(0.228171, 0.217868)
+position = Vector2(94.25, 97.5)
+scale = Vector2(0.308896, 0.299373)
 texture = ExtResource("1_nf884")
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(71.25, 73)
-shape = SubResource("RectangleShape2D_ek0or")
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="."]
+polygon = PackedVector2Array(26, 18, 42, 16, 70, 11, 84, 18, 105, 21, 119, 11, 148, 11, 163, 18, 173, 14, 176, 32, 174, 46, 180, 47, 180, 165, 175, 171, 175, 182, 162, 186, 160, 178, 30, 178, 29, 187, 16, 186, 18, 169, 11, 163, 10, 49, 17, 32, 19, 15, 33, 19)

@@ -3,15 +3,15 @@
 [ext_resource type="Texture2D" uid="uid://deivk3qco703h" path="res://Accets/Rooms/furniture/book_shelv.jpg" id="1_jd1v5"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_3cpr1"]
-size = Vector2(204.5, 43)
+size = Vector2(350.5, 74)
 
 [node name="book_shelv" type="CharacterBody2D"]
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
-position = Vector2(124.867, 68.0985)
-scale = Vector2(0.213305, 0.22435)
+position = Vector2(195.367, 52.0985)
+scale = Vector2(0.359117, 0.386787)
 texture = ExtResource("1_jd1v5")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(122.75, 68.5)
+position = Vector2(195.75, 53)
 shape = SubResource("RectangleShape2D_3cpr1")

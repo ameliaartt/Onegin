@@ -1,16 +1,27 @@
-[gd_scene load_steps=14 format=3 uid="uid://khff5e8wc3n5"]
+[gd_scene load_steps=25 format=3 uid="uid://khff5e8wc3n5"]
 
 [ext_resource type="Script" path="res://Scenes/Player/onegin_home.gd" id="1_6ndbb"]
 [ext_resource type="Texture2D" uid="uid://dtx4303tn52es" path="res://Accets/Carecters/Onegin/Onegin home 5.png" id="2_n5q2o"]
 [ext_resource type="Texture2D" uid="uid://blcdvjqf7uubl" path="res://Accets/Carecters/Onegin/Onegin home 1.png" id="3_t4q26"]
 [ext_resource type="Texture2D" uid="uid://df81pjsy8n1mp" path="res://Accets/Carecters/Onegin/Onegin home 9.png" id="4_g1881"]
 [ext_resource type="Texture2D" uid="uid://kqryje8v2q7c" path="res://Accets/Carecters/Onegin/Onegin home 7.png" id="5_6u677"]
+[ext_resource type="Texture2D" uid="uid://btqxc77ml7e1g" path="res://Accets/Carecters/Onegin/Onegin official 5.png" id="5_mjabj"]
 [ext_resource type="Texture2D" uid="uid://y384notxij0f" path="res://Accets/Carecters/Onegin/Onegin home 3.png" id="6_cx1n4"]
+[ext_resource type="Texture2D" uid="uid://bj2d82e1pfc75" path="res://Accets/Carecters/Onegin/Onegin official 1.png" id="6_p0jsg"]
 [ext_resource type="Texture2D" uid="uid://8c7utfde8gtg" path="res://Accets/Carecters/Onegin/Onegin home 8.png" id="7_mg01b"]
+[ext_resource type="Texture2D" uid="uid://txle6072kvwv" path="res://Accets/Carecters/Onegin/Onegin official 9.png" id="7_po3ie"]
 [ext_resource type="Texture2D" uid="uid://eib3q5np4lt3" path="res://Accets/Carecters/Onegin/Onegin home 4.png" id="8_gr3l5"]
 [ext_resource type="Texture2D" uid="uid://b5y7wcvu8g3vw" path="res://Accets/Carecters/Onegin/Onegin home 6.png" id="9_1dpam"]
 [ext_resource type="Texture2D" uid="uid://bnvr6uqjmwq71" path="res://Accets/Carecters/Onegin/Onegin home 10.png" id="10_3a5q3"]
+[ext_resource type="Texture2D" uid="uid://c88e76n4qi3ly" path="res://Accets/Carecters/Onegin/Onegin official 7.png" id="10_i76jp"]
 [ext_resource type="Texture2D" uid="uid://do04iflv8ae2q" path="res://Accets/Carecters/Onegin/Onegin home 2.png" id="11_4fxl3"]
+[ext_resource type="Texture2D" uid="uid://dmca3cel0j3ht" path="res://Accets/Carecters/Onegin/Onegin official 3.png" id="11_wlgoq"]
+[ext_resource type="FontFile" uid="uid://bgcg5rxfw1udd" path="res://Accets/Srift/ofont.ru_LazurskiCTT.ttf" id="12_5nlrk"]
+[ext_resource type="Texture2D" uid="uid://d32hcw831fprv" path="res://Accets/Carecters/Onegin/Onegin official 8.png" id="14_ng0rm"]
+[ext_resource type="Texture2D" uid="uid://chsd836fq132p" path="res://Accets/Carecters/Onegin/Onegin official 4.png" id="15_mq5o3"]
+[ext_resource type="Texture2D" uid="uid://3gqk23cr6s3n" path="res://Accets/Carecters/Onegin/Onegin official 6.png" id="19_ch2wb"]
+[ext_resource type="Texture2D" uid="uid://b5pcg0yb433qe" path="res://Accets/Carecters/Onegin/Onegin official 2.png" id="20_2bc6j"]
+[ext_resource type="Texture2D" uid="uid://bcxouronl7vht" path="res://Accets/Carecters/Onegin/Onegin official 10.png" id="21_pg0ms"]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_lmh58"]
 animations = [{
@@ -33,6 +44,23 @@ animations = [{
 }, {
 "frames": [{
 "duration": 1.0,
+"texture": ExtResource("5_mjabj")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_p0jsg")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_mjabj")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_po3ie")
+}],
+"loop": true,
+"name": &"down_ofic",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
 "texture": ExtResource("5_6u677")
 }, {
 "duration": 1.0,
@@ -44,6 +72,17 @@ animations = [{
 }, {
 "frames": [{
 "duration": 1.0,
+"texture": ExtResource("10_i76jp")
+}, {
+"duration": 1.0,
+"texture": ExtResource("11_wlgoq")
+}],
+"loop": true,
+"name": &"left_ofic",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
 "texture": ExtResource("7_mg01b")
 }, {
 "duration": 1.0,
@@ -51,6 +90,17 @@ animations = [{
 }],
 "loop": true,
 "name": &"right",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("14_ng0rm")
+}, {
+"duration": 1.0,
+"texture": ExtResource("15_mq5o3")
+}],
+"loop": true,
+"name": &"right_ofic",
 "speed": 5.0
 }, {
 "frames": [{
@@ -69,22 +119,65 @@ animations = [{
 "loop": true,
 "name": &"up",
 "speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("19_ch2wb")
+}, {
+"duration": 1.0,
+"texture": ExtResource("20_2bc6j")
+}, {
+"duration": 1.0,
+"texture": ExtResource("19_ch2wb")
+}, {
+"duration": 1.0,
+"texture": ExtResource("21_pg0ms")
+}],
+"loop": true,
+"name": &"up_ofic",
+"speed": 5.0
 }]
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_4vkh0"]
-size = Vector2(52, 70)
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_atses"]
+size = Vector2(66, 92.2703)
 
 [node name="Onegin1" type="CharacterBody2D"]
 light_mask = 2
 script = ExtResource("1_6ndbb")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
-position = Vector2(238.328, 113.228)
-scale = Vector2(0.187606, 0.189598)
+position = Vector2(245.312, 99.9178)
+scale = Vector2(0.233254, 0.247469)
 sprite_frames = SubResource("SpriteFrames_lmh58")
-animation = &"up"
+animation = &"right"
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-light_mask = 2
-position = Vector2(238, 119)
-shape = SubResource("RectangleShape2D_4vkh0")
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="."]
+position = Vector2(-15.9611, -10.1812)
+scale = Vector2(1.0787, 1.05625)
+polygon = PackedVector2Array(243, 51, 249, 51, 250, 57, 255, 56, 258, 58, 267, 60, 266, 63, 273, 66, 273, 74, 271, 78, 273, 83, 273, 88, 270, 93, 266, 95, 262, 101, 261, 105, 266, 107, 267, 112, 270, 118, 270, 126, 269, 135, 269, 144, 263, 148, 262, 151, 252, 151, 251, 147, 247, 147, 242, 147, 241, 151, 237, 151, 229, 150, 229, 146, 226, 145, 224, 139, 224, 134, 221, 133, 220, 126, 222, 120, 225, 112, 232, 106, 230, 99, 227, 98, 222, 95, 220, 91, 219, 82, 220, 74, 224, 66, 228, 61, 236, 56)
+
+[node name="Area2D" type="Area2D" parent="."]
+collision_layer = 0
+collision_mask = 16
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+position = Vector2(250, 99)
+scale = Vector2(1, 1.1912)
+shape = SubResource("RectangleShape2D_atses")
+
+[node name="ColorRect" type="ColorRect" parent="."]
+show_behind_parent = true
+offset_left = 153.0
+offset_top = 13.0
+offset_right = 365.0
+offset_bottom = 59.0
+color = Color(0, 0, 0, 0.384314)
+
+[node name="Label" type="Label" parent="."]
+offset_left = 155.0
+offset_top = 24.0
+offset_right = 364.0
+offset_bottom = 66.0
+theme_override_fonts/font = ExtResource("12_5nlrk")
+theme_override_font_sizes/font_size = 17
+horizontal_alignment = 1
