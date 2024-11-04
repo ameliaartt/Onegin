@@ -26,7 +26,7 @@
 [ext_resource type="Texture2D" uid="uid://c8osgbg15ftvh" path="res://Accets/Rooms/furniture/flower.png" id="23_w5n0u"]
 [ext_resource type="FontFile" uid="uid://dmdgi22dt6ytb" path="res://Accets/Srift/ofont.ru_Garamond_A.Z_PS.ttf" id="24_8gxwq"]
 
-[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_wyow5"]
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_6v0sv"]
 texture = ExtResource("1_e8j6l")
 texture_region_size = Vector2i(13, 13)
 0:0/0 = 0
@@ -1515,7 +1515,7 @@ texture_region_size = Vector2i(13, 13)
 [sub_resource type="TileSet" id="TileSet_38ghs"]
 tile_size = Vector2i(13, 13)
 physics_layer_0/collision_layer = 1
-sources/4 = SubResource("TileSetAtlasSource_wyow5")
+sources/4 = SubResource("TileSetAtlasSource_6v0sv")
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_017t8"]
 size = Vector2(249.5, 125.25)

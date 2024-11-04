@@ -1,6 +1,14 @@
 extends CanvasLayer
 ## A basic dialogue balloon for use with Dialogue Manager.
 
+@export var im1 = load("res://Accets/Carecters/dilogs/1.png")
+@export var im2 = load("res://Accets/Carecters/dilogs/2.png")
+@export var im3 = load("res://Accets/Carecters/dilogs/2.png")
+@export var im4 = load("res://Accets/Carecters/dilogs/4.png")
+
+var spritesOnegin = [im1, im2, im3, im4]
+var spritesnep = []
+
 ## The action to use for advancing the dialogue
 @export var next_action: StringName = &"ui_accept"
 
@@ -41,17 +49,17 @@ var dialogue_line: DialogueLine:
 
 		character_label.visible = not dialogue_line.character.is_empty()
 		character_label.text = tr(dialogue_line.character, "dialogue")
-		var portrait_path: String = "res://Accets/Carecters/dilogs/%s.png" % Global.sprite
-		if FileAccess.file_exists(portrait_path):
-			portrait.texture = load(portrait_path)
+		
+
+		if (Global.sprite >= 1) and (Global.sprite <= 4):
+			portrait.texture = spritesOnegin[Global.sprite - 1]
 		else:
 			portrait.texture = null
-		
-		var portrait_path2: String = "res://Accets/Carecters/dilogs/%s.png" % Global.sprite2
-		if FileAccess.file_exists(portrait_path2):
-			portrait2.texture = load(portrait_path2)
-		else:
-			portrait2.texture = null
+			
+		#if (Global.sprite >= 1) and (Global.sprite <= 4):
+			#portrait2.texture = spritesOnegin[Global.sprite - 1]
+		#else:
+			#portrait2.texture = null
 
 		dialogue_label.hide()
 		dialogue_label.dialogue_line = dialogue_line

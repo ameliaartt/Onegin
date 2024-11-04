@@ -1,0 +1,13 @@
+[gd_scene load_steps=2 format=3 uid="uid://ce56h6nh0k7kd"]
+
+[ext_resource type="Texture2D" uid="uid://b4lrv2j0bnv4a" path="res://Accets/Carecters/NPC/girl1.png" id="1_w021g"]
+
+[node name="CharacterBody2D" type="CharacterBody2D"]
+position = Vector2(489, -250)
+scale = Vector2(0.278935, 0.27509)
+
+[node name="Sprite2D3" type="Sprite2D" parent="."]
+texture = ExtResource("1_w021g")
+
+[node name="CollisionPolygon2D2" type="CollisionPolygon2D" parent="."]
+polygon = PackedVector2Array(-25.0955, -119.961, 21.5104, -119.961, 57.3611, -83.6092, 118.307, -25.4463, 132.647, 58.1629, 129.062, 123.596, 86.0416, 138.137, 28.6805, 134.502, -57.3611, 123.596, -96.7968, 116.326, -125.477, 61.798, -121.892, -7.27039, -64.5312, -69.0684, -46.6058, -112.691)

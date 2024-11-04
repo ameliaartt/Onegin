@@ -1,0 +1,7 @@
+[gd_scene load_steps=2 format=3 uid="uid://bppts3s6gm0w3"]
+
+[ext_resource type="PackedScene" uid="uid://khff5e8wc3n5" path="res://Scenes/Player/Onegin_home.tscn" id="1_88gqh"]
+
+[node name="Restaurant" type="Node2D"]
+
+[node name="Onegin1" parent="." instance=ExtResource("1_88gqh")]

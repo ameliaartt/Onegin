@@ -37,24 +37,32 @@ func _process(delta):
 	var velocity = Vector2.ZERO # The player's movement vector.
 	if Input.is_action_pressed("right"):
 		velocity.x += 1
+		if Global.do_count == 4:
+			Global.move += 1
 		if Global.clothes_1 == 0:
 			$AnimatedSprite2D.animation = "left"
 		else:
 			$AnimatedSprite2D.animation = "left_ofic"
 	if Input.is_action_pressed("left"):
 		velocity.x -= 1
+		if Global.do_count == 4:
+			Global.move += 1
 		if Global.clothes_1 == 0:
 			$AnimatedSprite2D.animation = "right"
 		else:
 			$AnimatedSprite2D.animation = "right_ofic"
 	if Input.is_action_pressed("down"):
 		velocity.y += 1
+		if Global.do_count == 4:
+			Global.move += 1
 		if Global.clothes_1 == 0:
 			$AnimatedSprite2D.animation = "down"
 		else:
 			$AnimatedSprite2D.animation = "down_ofic"
 	if Input.is_action_pressed("up"):
 		velocity.y -= 1
+		if Global.do_count == 4:
+			Global.move += 1
 		if Global.clothes_1 == 0:
 			$AnimatedSprite2D.animation = "up"
 		else:
