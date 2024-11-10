@@ -10,7 +10,7 @@ var spritesOnegin = [im1, im2, im3, im4]
 var spritesnep = []
 
 ## The action to use for advancing the dialogue
-@export var next_action: StringName = &"ui_accept"
+@export var next_action: StringName = &"do"
 
 ## The action to use to skip typing the dialogue
 @export var skip_action: StringName = &"ui_cancel"
@@ -38,6 +38,8 @@ var dialogue_line: DialogueLine:
 
 		# The dialogue has finished so close the balloon
 		if not next_dialogue_line:
+			Global.move = 0
+			Music.do()
 			queue_free()
 			return
 
@@ -56,11 +58,10 @@ var dialogue_line: DialogueLine:
 		else:
 			portrait.texture = null
 			
-		#if (Global.sprite >= 1) and (Global.sprite <= 4):
+		#if (Global.sprite2 >= 1) and (Global2.sprite <= 4):
 			#portrait2.texture = spritesOnegin[Global.sprite - 1]
 		#else:
 			#portrait2.texture = null
-
 		dialogue_label.hide()
 		dialogue_label.dialogue_line = dialogue_line
 
@@ -131,6 +132,8 @@ func _notification(what: int) -> void:
 
 ## Start some dialogue
 func start(dialogue_resource: DialogueResource, title: String, extra_game_states: Array = []) -> void:
+	Global.dilog = 1
+	Global.move = 1
 	temporary_game_states =  [self] + extra_game_states
 	is_waiting_for_input = false
 	resource = dialogue_resource

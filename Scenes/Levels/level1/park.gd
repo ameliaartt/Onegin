@@ -21,7 +21,7 @@ func _process(delta: float) -> void:
 		$Onegin1/Camera2D/Button.visible = false
 	pass
 	
-	if Global.do_count == 4 and num_num == 0 and Global.move == 1:
+	if Global.do_count == 4 and num_num == 0 and Global.move1 == 1:
 		num_num = 1
 		DialogueManager.show_dialogue_balloon(load("res://Scenes/dialogs/level1/main.dialogue"), "obed")
 		Global.goal = "Цель: идти в ресторан"
@@ -29,6 +29,8 @@ func _process(delta: float) -> void:
 func _on_area_2d_body_entered(body: Node2D) -> void:
 	if Global.do_count == 4:
 		Global.goal = "Цель: найти графа"
+		Music.m1.stop()
+		Music.m4.play()
 		get_tree().change_scene_to_file("res://Scenes/Levels/level1/restaurant.tscn")
 	pass # Replace with function body.
 

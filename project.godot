@@ -78,7 +78,7 @@ menu={
 
 [internationalization]
 
-locale/translations_pot_files=PackedStringArray("res://Scenes/dialogs/level1/main.dialogue", "res://Scenes/dialogs/level2/main2.dialogue")
+locale/translations_pot_files=PackedStringArray("res://Scenes/dialogs/level2/main2.dialogue", "res://Scenes/dialogs/level1/main.dialogue")
 
 [layer_names]
 

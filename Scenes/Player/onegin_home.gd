@@ -30,43 +30,39 @@ func _process(delta):
 	
 	if Input.is_action_just_pressed("do"):
 		var actionables = actionable_finger.get_overlapping_areas()
-		if actionables.size() > 0:
+		if actionables.size() > 0 and Global.dilog == 0:
 			actionables[0].action()
 		return
 		
 	var velocity = Vector2.ZERO # The player's movement vector.
 	if Input.is_action_pressed("right"):
-		velocity.x += 1
-		if Global.do_count == 4:
-			Global.move += 1
-		if Global.clothes_1 == 0:
-			$AnimatedSprite2D.animation = "left"
-		else:
-			$AnimatedSprite2D.animation = "left_ofic"
+		if Global.move == 0:
+			velocity.x += 1
+			if Global.clothes_1 == 0:
+				$AnimatedSprite2D.animation = "left"
+			else:
+				$AnimatedSprite2D.animation = "left_ofic"
 	if Input.is_action_pressed("left"):
-		velocity.x -= 1
-		if Global.do_count == 4:
-			Global.move += 1
-		if Global.clothes_1 == 0:
-			$AnimatedSprite2D.animation = "right"
-		else:
-			$AnimatedSprite2D.animation = "right_ofic"
+		if Global.move == 0:
+			velocity.x -= 1
+			if Global.clothes_1 == 0:
+				$AnimatedSprite2D.animation = "right"
+			else:
+				$AnimatedSprite2D.animation = "right_ofic"
 	if Input.is_action_pressed("down"):
-		velocity.y += 1
-		if Global.do_count == 4:
-			Global.move += 1
-		if Global.clothes_1 == 0:
-			$AnimatedSprite2D.animation = "down"
-		else:
-			$AnimatedSprite2D.animation = "down_ofic"
+		if Global.move == 0:
+			velocity.y += 1
+			if Global.clothes_1 == 0:
+				$AnimatedSprite2D.animation = "down"
+			else:
+				$AnimatedSprite2D.animation = "down_ofic"
 	if Input.is_action_pressed("up"):
-		velocity.y -= 1
-		if Global.do_count == 4:
-			Global.move += 1
-		if Global.clothes_1 == 0:
-			$AnimatedSprite2D.animation = "up"
-		else:
-			$AnimatedSprite2D.animation = "up_ofic"
+		if Global.move == 0:
+			velocity.y -= 1
+			if Global.clothes_1 == 0:
+				$AnimatedSprite2D.animation = "up"
+			else:
+				$AnimatedSprite2D.animation = "up_ofic"
 
 	if velocity.length() > 0:
 		velocity = velocity.normalized() * speed

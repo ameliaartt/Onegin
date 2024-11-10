@@ -1,16 +1,20 @@
-[gd_scene load_steps=26 format=3 uid="uid://bir3vgpyt5stq"]
+[gd_scene load_steps=34 format=3 uid="uid://bir3vgpyt5stq"]
 
 [ext_resource type="Texture2D" uid="uid://bfqubt36gfeaa" path="res://Accets/Rooms/bylvar/loc2.png" id="1_jfwkl"]
 [ext_resource type="Script" path="res://Scenes/Levels/level1/park.gd" id="1_l52xi"]
-[ext_resource type="PackedScene" uid="uid://khff5e8wc3n5" path="res://Scenes/Player/Onegin_home.tscn" id="1_rsb47"]
 [ext_resource type="Texture2D" uid="uid://cq232sfulm8k2" path="res://Accets/Rooms/photo_2024-02-04_18-58-27.jpg" id="3_vgukg"]
 [ext_resource type="FontFile" uid="uid://dmdgi22dt6ytb" path="res://Accets/Srift/ofont.ru_Garamond_A.Z_PS.ttf" id="5_1w13o"]
 [ext_resource type="PackedScene" uid="uid://ce56h6nh0k7kd" path="res://Scenes/Objekts/loc2/girl1.tscn" id="6_fjl1d"]
 [ext_resource type="Texture2D" uid="uid://skukqr6fw7af" path="res://Accets/Carecters/NPC/men1.png" id="7_d8yht"]
+[ext_resource type="Texture2D" uid="uid://duo0wpw8d1148" path="res://Accets/Carecters/NPC/men3.png" id="7_o4alm"]
 [ext_resource type="PackedScene" uid="uid://c4mmrcemj7yis" path="res://Scenes/dialogs/level1/vase.tscn" id="7_oci2l"]
+[ext_resource type="Texture2D" uid="uid://dqoccksmsyiey" path="res://Accets/Carecters/NPC/men2.png" id="7_xqhgu"]
 [ext_resource type="Script" path="res://Scenes/dialogs/level1/lovers.gd" id="8_gyt55"]
+[ext_resource type="Texture2D" uid="uid://bx0e1ccuuwt10" path="res://Accets/Carecters/NPC/girl2.png" id="8_lrh3f"]
 [ext_resource type="Script" path="res://Scenes/dialogs/level1/most.gd" id="8_r86db"]
+[ext_resource type="Texture2D" uid="uid://dydll6iygnhyy" path="res://Accets/Carecters/NPC/men4.png" id="8_tg7td"]
 [ext_resource type="Resource" uid="uid://3rtn24c1nmcp" path="res://Scenes/dialogs/level1/main.dialogue" id="9_fuoxs"]
+[ext_resource type="Texture2D" uid="uid://cfcejpomlyjed" path="res://Accets/Carecters/NPC/girl3.png" id="9_l07th"]
 [ext_resource type="Script" path="res://Scenes/dialogs/level1/allei.gd" id="12_scf3l"]
 [ext_resource type="Texture2D" uid="uid://s7iqlg0igm8a" path="res://Accets/Rooms/bylvar/derevo.png" id="12_xhynf"]
 [ext_resource type="Texture2D" uid="uid://c34cgn207p8fe" path="res://Accets/Rooms/bylvar/chaika.png" id="13_1kra1"]
@@ -18,8 +22,11 @@
 [ext_resource type="Texture2D" uid="uid://g87dameuxnik" path="res://Accets/Rooms/bylvar/most.png" id="14_hrdkr"]
 [ext_resource type="Texture2D" uid="uid://bhe7g2qnykpta" path="res://Accets/Rooms/bylvar/chaika2.png" id="14_tgaw3"]
 [ext_resource type="Script" path="res://Scenes/dialogs/level1/chaiki.gd" id="15_yk0oi"]
+[ext_resource type="Script" path="res://Scenes/dialogs/level1/soli.gd" id="16_8mon6"]
+[ext_resource type="PackedScene" uid="uid://bmw4vgma4s18m" path="res://Scenes/Player/onegin_ofic.tscn" id="16_hokj3"]
+[ext_resource type="Texture2D" uid="uid://dkymkmxbjkq7g" path="res://Accets/Rooms/bylvar/chaika3.png" id="25_c026b"]
 
-[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_wljja"]
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_epnkd"]
 texture = ExtResource("3_vgukg")
 texture_region_size = Vector2i(13, 13)
 0:0/0 = 0
@@ -1508,10 +1515,10 @@ texture_region_size = Vector2i(13, 13)
 [sub_resource type="TileSet" id="TileSet_8apbt"]
 tile_size = Vector2i(13, 13)
 physics_layer_0/collision_layer = 1
-sources/4 = SubResource("TileSetAtlasSource_wljja")
+sources/4 = SubResource("TileSetAtlasSource_epnkd")
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_i7j0w"]
-size = Vector2(93.5, 106)
+size = Vector2(93.5, 55)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_cq55k"]
 size = Vector2(1276.28, 899.254)
@@ -1520,10 +1527,13 @@ size = Vector2(1276.28, 899.254)
 size = Vector2(562.75, 62)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_ovjuo"]
-size = Vector2(1759, 324)
+size = Vector2(1762.5, 320)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_qd7s4"]
 size = Vector2(307.5, 260.5)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_vdstk"]
+size = Vector2(215, 161)
 
 [node name="Park" type="Node2D"]
 script = ExtResource("1_l52xi")
@@ -1539,46 +1549,91 @@ scale = Vector2(2.04192, 2.16731)
 texture = ExtResource("1_jfwkl")
 metadata/_edit_lock_ = true
 
-[node name="Onegin1" parent="." instance=ExtResource("1_rsb47")]
-position = Vector2(865, 74)
-
-[node name="Camera2D" type="Camera2D" parent="Onegin1"]
-position = Vector2(242, 86)
-limit_left = -1500
-limit_top = -298
-limit_right = 1148
-limit_bottom = 820
-position_smoothing_enabled = true
-position_smoothing_speed = 4.0
-rotation_smoothing_enabled = true
-
-[node name="Button" type="Button" parent="Onegin1/Camera2D"]
-offset_left = -207.0
-offset_top = -10.0
-offset_right = 41.0
-offset_bottom = 54.0
-theme_override_fonts/font = ExtResource("5_1w13o")
-theme_override_font_sizes/font_size = 31
-text = "Выйти в меню"
-
 [node name="Area2D" type="Area2D" parent="."]
 position = Vector2(-28, 578)
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
-position = Vector2(-1122.75, -439)
+position = Vector2(-1122.75, -464.5)
 shape = SubResource("RectangleShape2D_i7j0w")
 
-[node name="CharacterBody2D2" type="CharacterBody2D" parent="."]
+[node name="nps" type="Node" parent="."]
+
+[node name="CharacterBody2D2" type="CharacterBody2D" parent="nps"]
 position = Vector2(489, -250)
 scale = Vector2(0.278935, 0.27509)
 
-[node name="Sprite2D" type="Sprite2D" parent="CharacterBody2D2"]
-position = Vector2(-279.635, 69.0683)
+[node name="Sprite2D" type="Sprite2D" parent="nps/CharacterBody2D2"]
+position = Vector2(-283.22, 58.1628)
+scale = Vector2(0.904872, 0.922312)
 texture = ExtResource("7_d8yht")
 
-[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="CharacterBody2D2"]
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="nps/CharacterBody2D2"]
+position = Vector2(-286.805, 61.798)
+polygon = PackedVector2Array(-43.0208, -210.84, 7.17017, -210.84, 86.0415, -138.137, 125.477, -39.9869, 103.967, -3.63513, 46.6058, 3.63519, -35.8507, 10.9055, -93.2117, -7.27032, -139.818, -25.4462, -154.158, -61.7979, -139.818, -101.785, -114.722, -152.677, -82.4565, -181.759)
+
+[node name="CharacterBody2D" type="CharacterBody2D" parent="nps"]
+
+[node name="Sprite2D" type="Sprite2D" parent="nps/CharacterBody2D"]
+position = Vector2(-625, -233)
+scale = Vector2(0.274554, 0.278935)
+texture = ExtResource("7_o4alm")
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="nps/CharacterBody2D"]
+polygon = PackedVector2Array(-630, -284, -620, -292, -610, -289, -597, -281, -587, -270, -588, -248, -599, -234, -609, -231, -629, -232, -641, -234, -649, -239, -651, -252, -651, -265, -643, -273)
+
+[node name="CharacterBody2D3" type="CharacterBody2D" parent="nps"]
+position = Vector2(3, -2)
+metadata/_edit_group_ = true
+
+[node name="Sprite2D" type="Sprite2D" parent="nps/CharacterBody2D3"]
+position = Vector2(-519, -225)
+scale = Vector2(0.294445, 0.269828)
+texture = ExtResource("8_tg7td")
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="nps/CharacterBody2D3"]
+position = Vector2(0, 5)
+polygon = PackedVector2Array(-526, -288, -519, -288, -508, -284, -498, -278, -492, -268, -488, -255, -487, -241, -498, -236, -508, -232, -535, -232, -546, -243, -552, -257, -556, -269, -550, -277, -541, -282)
+
+[node name="CharacterBody2D4" type="CharacterBody2D" parent="nps"]
+
+[node name="CharacterBody2D5" type="CharacterBody2D" parent="nps"]
+position = Vector2(-325, 94)
+scale = Vector2(0.278935, 0.27509)
+metadata/_edit_group_ = true
+
+[node name="Sprite2D" type="Sprite2D" parent="nps/CharacterBody2D5"]
 position = Vector2(-279.635, 69.0683)
-polygon = PackedVector2Array(3.58508, -210.84, -50.1909, -214.475, -82.4565, -192.664, -125.477, -145.407, -154.158, -116.326, -164.913, -65.4331, -136.232, -32.7166, -86.0415, -14.5406, -86.0415, 7.27039, -125.477, 43.6221, -154.158, 87.2442, -164.913, 123.596, -150.573, 141.772, -111.137, 167.218, -114.722, 134.502, -78.8717, 109.056, -53.7762, 116.326, -10.7554, 101.785, 50.1907, 98.15, 75.2861, 141.772, 89.6265, 138.137, 96.7966, 163.583, 93.2115, 105.42, 96.7968, 159.948, 114.722, 138.137, 111.137, 98.1497, 96.7968, 79.9738, 86.0415, 58.1628, 71.7013, 14.5407, 53.776, 3.63519, 57.3611, -7.27032, 82.4565, -7.27032, 96.7968, -14.5406, 103.967, -32.7166, 121.892, -39.9869, 100.382, -119.961, 89.6266, -149.042, 53.776, -178.124, 17.9253, -203.57)
+texture = ExtResource("7_xqhgu")
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="nps/CharacterBody2D5"]
+position = Vector2(-279.635, 69.0683)
+polygon = PackedVector2Array(-43.0208, -210.84, 7.17017, -210.84, 86.0415, -138.137, 125.477, -39.9869, 103.967, -3.63513, 46.6058, 3.63519, -35.8507, 10.9055, -93.2117, -7.27032, -139.818, -25.4462, -154.158, -61.7979, -139.818, -101.785, -114.722, -152.677, -82.4565, -181.759)
+
+[node name="CharacterBody2D6" type="CharacterBody2D" parent="nps"]
+position = Vector2(-247, 94)
+scale = Vector2(0.278935, 0.27509)
+metadata/_edit_group_ = true
+
+[node name="Sprite2D" type="Sprite2D" parent="nps/CharacterBody2D6"]
+position = Vector2(-279.635, 69.0683)
+texture = ExtResource("8_lrh3f")
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="nps/CharacterBody2D6"]
+position = Vector2(-279.635, 69.0683)
+polygon = PackedVector2Array(-43.0208, -210.84, 7.17017, -210.84, 86.0415, -138.137, 125.477, -39.9869, 103.967, -3.63513, 46.6058, 3.63519, -35.8507, 10.9055, -93.2117, -7.27032, -139.818, -25.4462, -154.158, -61.7979, -139.818, -101.785, -114.722, -152.677, -82.4565, -181.759)
+
+[node name="CharacterBody2D7" type="CharacterBody2D" parent="nps"]
+position = Vector2(-1156, 444)
+scale = Vector2(0.278935, 0.27509)
+
+[node name="Sprite2D" type="Sprite2D" parent="nps/CharacterBody2D7"]
+position = Vector2(-175.668, -54.5276)
+scale = Vector2(1.96325, 2.11434)
+texture = ExtResource("9_l07th")
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="nps/CharacterBody2D7"]
+position = Vector2(-136.232, -29.0814)
+polygon = PackedVector2Array(-57.361, -239.922, 35.8506, -232.651, 86.0415, -138.137, 89.6266, -39.9869, 78.8714, -10.9055, 46.6058, 3.63519, -35.8507, 10.9055, -93.2117, -7.27032, -139.818, -25.4462, -129.062, -61.798, -139.818, -101.785, -114.722, -152.677, -89.6266, -210.84)
 
 [node name="predmet" type="Node" parent="."]
 
@@ -1607,12 +1662,14 @@ position = Vector2(864.625, 315)
 shape = SubResource("RectangleShape2D_6adb0")
 
 [node name="Area2D3" parent="predmet" instance=ExtResource("7_oci2l")]
+position = Vector2(7, -44)
 script = ExtResource("12_scf3l")
 dialogue_resource = ExtResource("9_fuoxs")
 dialogue_start = "allei"
+metadata/_edit_group_ = true
 
 [node name="CollisionShape2D2" type="CollisionShape2D" parent="predmet/Area2D3"]
-position = Vector2(-617.5, 675)
+position = Vector2(-594.75, 711)
 shape = SubResource("RectangleShape2D_ovjuo")
 
 [node name="CharacterBody2D2" type="CharacterBody2D" parent="predmet"]
@@ -1660,7 +1717,44 @@ dialogue_start = "chaika"
 position = Vector2(412, 703.25)
 shape = SubResource("RectangleShape2D_qd7s4")
 
+[node name="Area2D" type="Area2D" parent="predmet"]
+position = Vector2(-667, -264)
+collision_layer = 16
+collision_mask = 0
+script = ExtResource("16_8mon6")
+dialogue_resource = ExtResource("9_fuoxs")
+dialogue_start = "soli"
+metadata/_edit_group_ = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="predmet/Area2D"]
+position = Vector2(97.5, 70.5)
+shape = SubResource("RectangleShape2D_vdstk")
+
+[node name="Onegin1" parent="." instance=ExtResource("16_hokj3")]
+position = Vector2(870, 177)
+metadata/_edit_group_ = true
+
+[node name="Camera2D" type="Camera2D" parent="Onegin1"]
+position = Vector2(247, 88)
+limit_left = -1500
+limit_top = -298
+limit_right = 1148
+limit_bottom = 820
+position_smoothing_enabled = true
+position_smoothing_speed = 4.0
+rotation_smoothing_enabled = true
+
+[node name="Button" type="Button" parent="Onegin1/Camera2D"]
+offset_left = -207.0
+offset_top = -10.0
+offset_right = 41.0
+offset_bottom = 54.0
+theme_override_fonts/font = ExtResource("5_1w13o")
+theme_override_font_sizes/font_size = 31
+text = "Выйти в меню"
+
 [node name="Sprite2D2" type="Sprite2D" parent="."]
+top_level = true
 light_mask = 8
 visibility_layer = 8
 position = Vector2(-593.438, 581.25)
@@ -1668,20 +1762,22 @@ scale = Vector2(2.12938, 2.11623)
 texture = ExtResource("12_xhynf")
 
 [node name="Sprite2D3" type="Sprite2D" parent="."]
+top_level = true
 position = Vector2(-644, 484)
 scale = Vector2(2.0297, 2.2)
 texture = ExtResource("13_o42ef")
 
 [node name="Sprite2D4" type="Sprite2D" parent="."]
+top_level = true
 light_mask = 8
 position = Vector2(853.375, 335.469)
 scale = Vector2(2.03681, 2.02083)
 texture = ExtResource("14_hrdkr")
 
 [node name="Sprite2D5" type="Sprite2D" parent="."]
-position = Vector2(573.25, 390.5)
-scale = Vector2(2.04688, 1.95833)
-texture = ExtResource("13_1kra1")
+position = Vector2(573, 430)
+scale = Vector2(2.29267, 2.15158)
+texture = ExtResource("25_c026b")
 
-[connection signal="pressed" from="Onegin1/Camera2D/Button" to="." method="_on_button_pressed"]
 [connection signal="body_entered" from="Area2D" to="." method="_on_area_2d_body_entered"]
+[connection signal="pressed" from="Onegin1/Camera2D/Button" to="." method="_on_button_pressed"]

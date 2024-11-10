@@ -1,8 +1,8 @@
 [gd_scene load_steps=10 format=3 uid="uid://73jm5qjy52vq"]
 
 [ext_resource type="Script" path="res://Scenes/dialogs/level1/balloon.gd" id="1_36de5"]
-[ext_resource type="FontFile" uid="uid://bgcg5rxfw1udd" path="res://Accets/Srift/ofont.ru_LazurskiCTT.ttf" id="2_2rr4x"]
 [ext_resource type="PackedScene" uid="uid://ckvgyvclnwggo" path="res://addons/dialogue_manager/dialogue_label.tscn" id="2_a8ve6"]
+[ext_resource type="FontFile" uid="uid://fy2jw1pvh6x8" path="res://Accets/Srift/ofont.ru_Baskerville WGL4 BT.ttf" id="2_cxj21"]
 [ext_resource type="Script" path="res://addons/dialogue_manager/dialogue_reponses_menu.gd" id="3_72ixx"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_spyqn"]
@@ -53,7 +53,7 @@ Button/colors/font_hover_color = Color(0.356863, 0.235294, 0.0901961, 1)
 Button/colors/font_hover_pressed_color = Color(0.356863, 0.235294, 0.0901961, 1)
 Button/colors/font_outline_color = Color(0.356863, 0.235294, 0.0901961, 1)
 Button/colors/font_pressed_color = Color(0.356863, 0.235294, 0.0901961, 1)
-Button/fonts/font = ExtResource("2_2rr4x")
+Button/fonts/font = ExtResource("2_cxj21")
 Button/styles/disabled = SubResource("StyleBoxFlat_spyqn")
 Button/styles/focus = SubResource("StyleBoxFlat_v0xgs")
 Button/styles/hover = SubResource("StyleBoxFlat_e0njw")
@@ -133,6 +133,8 @@ unique_name_in_owner = true
 modulate = Color(0.318946, 0.276744, 0.0980711, 1)
 layout_mode = 2
 mouse_filter = 1
+theme_override_fonts/normal_font = ExtResource("2_cxj21")
+theme_override_font_sizes/normal_font_size = 25
 bbcode_enabled = true
 text = "Персонаж"
 fit_content = true
@@ -143,7 +145,8 @@ unique_name_in_owner = true
 modulate = Color(0.286275, 0.2, 0.0745098, 1)
 layout_mode = 2
 size_flags_vertical = 3
-theme_override_fonts/normal_font = ExtResource("2_2rr4x")
+theme_override_fonts/normal_font = ExtResource("2_cxj21")
+theme_override_font_sizes/normal_font_size = 27
 text = "Диалог..."
 
 [node name="Responses" type="MarginContainer" parent="Balloon"]
@@ -170,6 +173,7 @@ response_template = NodePath("ResponseExample")
 
 [node name="ResponseExample" type="Button" parent="Balloon/Responses/ResponsesMenu"]
 layout_mode = 2
+theme_override_font_sizes/font_size = 23
 text = "Примеры выбора"
 
 [connection signal="gui_input" from="Balloon" to="." method="_on_balloon_gui_input"]

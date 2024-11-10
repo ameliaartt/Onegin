@@ -4,6 +4,7 @@ var num_num = 0
 var fuf2 = 0
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
+	$Button.visible = false
 	pass # Replace with function body.
 
 
@@ -28,6 +29,8 @@ func _process(delta) -> void:
 func _on_area_2d_body_entered(body: Node2D) -> void:
 	if Global.shelf_count == 1:
 		Global.goal = "Цель: ???"
+		Music.m3.stop()
+		Music.m1.play()
 		get_tree().change_scene_to_file("res://Scenes/Levels/level1/park.tscn")
 	pass # Replace with function body.
 

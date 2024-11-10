@@ -3,6 +3,7 @@ extends Node
 #Общее
 var clothes_1 = 0 #Наряд Онегина
 var move = 0 #Движени
+var dilog = 0 #Контроль диалога
 var goal = "Цель: накраситься" #Цель
 var mus = 0 #Музыка
 var sprite = 0 #Спрайт Онегина
@@ -20,6 +21,7 @@ var soli = 0
 var allei = 0
 var lovers = 0
 var do_count = 0
+var move1 = 0
 
 
 func _ready():
