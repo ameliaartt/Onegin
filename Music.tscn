@@ -12,20 +12,20 @@ script = ExtResource("1_kjkhy")
 
 [node name="Menu" type="AudioStreamPlayer" parent="."]
 stream = ExtResource("1_nqawi")
-volume_db = -42.337
+volume_db = -26.272
 
 [node name="m1" type="AudioStreamPlayer" parent="."]
 stream = ExtResource("3_knxvm")
-volume_db = -41.789
+volume_db = -26.57
 
 [node name="m2" type="AudioStreamPlayer" parent="."]
 stream = ExtResource("4_3u60i")
-volume_db = -35.893
+volume_db = -26.592
 
 [node name="m3" type="AudioStreamPlayer" parent="."]
 stream = ExtResource("5_ndqal")
-volume_db = -46.938
+volume_db = -26.645
 
 [node name="m4" type="AudioStreamPlayer" parent="."]
 stream = ExtResource("6_yu0j8")
-volume_db = -46.938
+volume_db = -26.645

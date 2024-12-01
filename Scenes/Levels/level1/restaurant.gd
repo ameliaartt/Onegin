@@ -21,6 +21,9 @@ func _process(delta: float) -> void:
 	else:
 		$Button.visible = false
 	pass
+	
+	if Global.knaz == 1 and Global.move == 0:
+		get_tree().change_scene_to_file("res://Scenes/Levels/level1/thatr.tscn")
 
 
 func _on_button_pressed() -> void:

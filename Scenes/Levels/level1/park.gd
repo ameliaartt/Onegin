@@ -29,7 +29,7 @@ func _process(delta: float) -> void:
 func _on_area_2d_body_entered(body: Node2D) -> void:
 	if Global.do_count == 4:
 		Global.goal = "Цель: найти графа"
-		Music.m1.stop()
+		Music.m2.stop()
 		Music.m4.play()
 		get_tree().change_scene_to_file("res://Scenes/Levels/level1/restaurant.tscn")
 	pass # Replace with function body.

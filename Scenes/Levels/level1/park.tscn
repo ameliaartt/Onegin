@@ -26,7 +26,7 @@
 [ext_resource type="PackedScene" uid="uid://bmw4vgma4s18m" path="res://Scenes/Player/onegin_ofic.tscn" id="16_hokj3"]
 [ext_resource type="Texture2D" uid="uid://dkymkmxbjkq7g" path="res://Accets/Rooms/bylvar/chaika3.png" id="25_c026b"]
 
-[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_epnkd"]
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_oqg2k"]
 texture = ExtResource("3_vgukg")
 texture_region_size = Vector2i(13, 13)
 0:0/0 = 0
@@ -1515,7 +1515,7 @@ texture_region_size = Vector2i(13, 13)
 [sub_resource type="TileSet" id="TileSet_8apbt"]
 tile_size = Vector2i(13, 13)
 physics_layer_0/collision_layer = 1
-sources/4 = SubResource("TileSetAtlasSource_epnkd")
+sources/4 = SubResource("TileSetAtlasSource_oqg2k")
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_i7j0w"]
 size = Vector2(93.5, 55)
@@ -1593,8 +1593,6 @@ texture = ExtResource("8_tg7td")
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="nps/CharacterBody2D3"]
 position = Vector2(0, 5)
 polygon = PackedVector2Array(-526, -288, -519, -288, -508, -284, -498, -278, -492, -268, -488, -255, -487, -241, -498, -236, -508, -232, -535, -232, -546, -243, -552, -257, -556, -269, -550, -277, -541, -282)
-
-[node name="CharacterBody2D4" type="CharacterBody2D" parent="nps"]
 
 [node name="CharacterBody2D5" type="CharacterBody2D" parent="nps"]
 position = Vector2(-325, 94)

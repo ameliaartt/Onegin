@@ -29,6 +29,24 @@ func _on_start_pressed():
 	Music.menu.stop()
 	Music.m3.play()
 	Global.mus = 2
+	Global.clothes_1 = 0
+	Global.shelf_count = 0
+	Global.bad_count = 0
+	Global.bydyar_count = 0
+	Global.most = 0
+	Global.chaika = 0
+	Global.soli = 0
+	Global.allei = 0
+	Global.lovers = 0
+	Global.do_count = 0
+	Global.move1 = 0
+	Global.knaz = 0
+	Global.solev2 = 0
+	Global.fontan = 0
+	Global.girls = 0
+	Global.dama = 0
+	Global.komik = 0
+
 	pass # Replace with function body.
 
 

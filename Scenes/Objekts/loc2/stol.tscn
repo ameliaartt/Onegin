@@ -3,6 +3,8 @@
 [ext_resource type="Texture2D" uid="uid://c0rm24m76d6xc" path="res://Accets/Rooms/restaurant/stol.png" id="1_iuwf7"]
 
 [node name="CharacterBody2D" type="CharacterBody2D"]
+top_level = true
+visibility_layer = 8
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
 position = Vector2(97.25, 45.5)
@@ -10,3 +12,4 @@ scale = Vector2(1.44611, 1)
 texture = ExtResource("1_iuwf7")
 
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="."]
+polygon = PackedVector2Array(76, 51, 76, 60, 64, 67, 77, 73, 92, 73, 105, 68, 95, 60, 96, 44)
