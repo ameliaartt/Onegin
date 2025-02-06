@@ -1,0 +1,54 @@
+[gd_scene load_steps=3 format=3 uid="uid://cr6f7k2aeait7"]
+
+[ext_resource type="FontFile" uid="uid://dmdgi22dt6ytb" path="res://Accets/Srift/ofont.ru_Garamond_A.Z_PS.ttf" id="1_j6awb"]
+[ext_resource type="Script" path="res://Scenes/Levels/level2/voluem_2.gd" id="1_uoex1"]
+
+[node name="Voluem1_1" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_uoex1")
+
+[node name="ColorRect" type="ColorRect" parent="."]
+layout_mode = 0
+offset_left = -35.0
+offset_top = -16.0
+offset_right = 1200.0
+offset_bottom = 675.0
+color = Color(0.0770744, 0.0111495, 0.199017, 1)
+
+[node name="Label" type="Label" parent="."]
+layout_mode = 0
+offset_left = 295.0
+offset_top = 37.0
+offset_right = 876.0
+offset_bottom = 608.0
+theme_override_fonts/font = ExtResource("1_j6awb")
+theme_override_font_sizes/font_size = 40
+text = "Вдруг получил он в самом деле
+От управителя доклад,
+Что дядя при смерти в постеле
+И с ним проститься был бы рад.
+Прочтя печальное посланье,
+Евгений тотчас на свиданье
+Стремглав по почте поскакал
+И уж заранее зевал,
+Приготовляясь, денег ради,
+На вздохи, скуку и обман
+(И тем я начал мой роман);
+Но, прилетев в деревню дяди,
+Его нашел уж на столе,
+Как дань готовую земле."
+
+[node name="Button" type="Button" parent="."]
+layout_mode = 0
+offset_left = -2.0
+offset_right = 1162.0
+offset_bottom = 651.0
+flat = true
+metadata/_edit_lock_ = true
+
+[connection signal="pressed" from="Button" to="." method="_on_button_pressed"]

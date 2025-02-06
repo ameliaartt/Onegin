@@ -1,0 +1,185 @@
+[gd_scene load_steps=25 format=3 uid="uid://v2o2trum57xo"]
+
+[ext_resource type="Script" path="res://Scenes/Player/onegin_1.gd" id="1_2tqv8"]
+[ext_resource type="Texture2D" uid="uid://dtx4303tn52es" path="res://Accets/Carecters/Onegin/Onegin home 5.png" id="2_x3v6k"]
+[ext_resource type="Texture2D" uid="uid://blcdvjqf7uubl" path="res://Accets/Carecters/Onegin/Onegin home 1.png" id="3_qh2jn"]
+[ext_resource type="Texture2D" uid="uid://df81pjsy8n1mp" path="res://Accets/Carecters/Onegin/Onegin home 9.png" id="4_af1hp"]
+[ext_resource type="Texture2D" uid="uid://btqxc77ml7e1g" path="res://Accets/Carecters/Onegin/Onegin official 5.png" id="5_jjiow"]
+[ext_resource type="Texture2D" uid="uid://bj2d82e1pfc75" path="res://Accets/Carecters/Onegin/Onegin official 1.png" id="6_wb4ac"]
+[ext_resource type="Texture2D" uid="uid://txle6072kvwv" path="res://Accets/Carecters/Onegin/Onegin official 9.png" id="7_cgawf"]
+[ext_resource type="Texture2D" uid="uid://kqryje8v2q7c" path="res://Accets/Carecters/Onegin/Onegin home 7.png" id="8_312t8"]
+[ext_resource type="Texture2D" uid="uid://y384notxij0f" path="res://Accets/Carecters/Onegin/Onegin home 3.png" id="9_yl1q1"]
+[ext_resource type="Texture2D" uid="uid://c88e76n4qi3ly" path="res://Accets/Carecters/Onegin/Onegin official 7.png" id="10_gjk1m"]
+[ext_resource type="Texture2D" uid="uid://dmca3cel0j3ht" path="res://Accets/Carecters/Onegin/Onegin official 3.png" id="11_04joc"]
+[ext_resource type="Texture2D" uid="uid://8c7utfde8gtg" path="res://Accets/Carecters/Onegin/Onegin home 8.png" id="12_5w0yv"]
+[ext_resource type="Texture2D" uid="uid://eib3q5np4lt3" path="res://Accets/Carecters/Onegin/Onegin home 4.png" id="13_rn3no"]
+[ext_resource type="Texture2D" uid="uid://d32hcw831fprv" path="res://Accets/Carecters/Onegin/Onegin official 8.png" id="14_csw0w"]
+[ext_resource type="Texture2D" uid="uid://chsd836fq132p" path="res://Accets/Carecters/Onegin/Onegin official 4.png" id="15_j5ve8"]
+[ext_resource type="Texture2D" uid="uid://b5y7wcvu8g3vw" path="res://Accets/Carecters/Onegin/Onegin home 6.png" id="16_xa7ct"]
+[ext_resource type="Texture2D" uid="uid://do04iflv8ae2q" path="res://Accets/Carecters/Onegin/Onegin home 2.png" id="17_buqq7"]
+[ext_resource type="Texture2D" uid="uid://bnvr6uqjmwq71" path="res://Accets/Carecters/Onegin/Onegin home 10.png" id="18_ertjo"]
+[ext_resource type="Texture2D" uid="uid://3gqk23cr6s3n" path="res://Accets/Carecters/Onegin/Onegin official 6.png" id="19_rdw65"]
+[ext_resource type="Texture2D" uid="uid://b5pcg0yb433qe" path="res://Accets/Carecters/Onegin/Onegin official 2.png" id="20_0pigh"]
+[ext_resource type="Texture2D" uid="uid://bcxouronl7vht" path="res://Accets/Carecters/Onegin/Onegin official 10.png" id="21_hw4r7"]
+[ext_resource type="FontFile" uid="uid://bgcg5rxfw1udd" path="res://Accets/Srift/ofont.ru_LazurskiCTT.ttf" id="22_prrf7"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_lmh58"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_x3v6k")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_qh2jn")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_x3v6k")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_af1hp")
+}],
+"loop": true,
+"name": &"down",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("5_jjiow")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_wb4ac")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_jjiow")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_cgawf")
+}],
+"loop": true,
+"name": &"down_ofic",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("8_312t8")
+}, {
+"duration": 1.0,
+"texture": ExtResource("9_yl1q1")
+}],
+"loop": true,
+"name": &"left",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("10_gjk1m")
+}, {
+"duration": 1.0,
+"texture": ExtResource("11_04joc")
+}],
+"loop": true,
+"name": &"left_ofic",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("12_5w0yv")
+}, {
+"duration": 1.0,
+"texture": ExtResource("13_rn3no")
+}],
+"loop": true,
+"name": &"right",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("14_csw0w")
+}, {
+"duration": 1.0,
+"texture": ExtResource("15_j5ve8")
+}],
+"loop": true,
+"name": &"right_ofic",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("16_xa7ct")
+}, {
+"duration": 1.0,
+"texture": ExtResource("17_buqq7")
+}, {
+"duration": 1.0,
+"texture": ExtResource("18_ertjo")
+}, {
+"duration": 1.0,
+"texture": ExtResource("16_xa7ct")
+}],
+"loop": true,
+"name": &"up",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("19_rdw65")
+}, {
+"duration": 1.0,
+"texture": ExtResource("20_0pigh")
+}, {
+"duration": 1.0,
+"texture": ExtResource("19_rdw65")
+}, {
+"duration": 1.0,
+"texture": ExtResource("21_hw4r7")
+}],
+"loop": true,
+"name": &"up_ofic",
+"speed": 5.0
+}]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_atses"]
+size = Vector2(66, 91.4676)
+
+[node name="Onegin1" type="CharacterBody2D"]
+top_level = true
+light_mask = 2
+visibility_layer = 2
+script = ExtResource("1_2tqv8")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+position = Vector2(245.312, 99.9178)
+scale = Vector2(0.233254, 0.247469)
+sprite_frames = SubResource("SpriteFrames_lmh58")
+animation = &"left"
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="."]
+position = Vector2(-15.9611, -10.1812)
+scale = Vector2(1.0787, 1.05625)
+polygon = PackedVector2Array(243, 51, 249, 51, 250, 57, 255, 56, 258, 58, 267, 60, 266, 63, 273, 66, 273, 74, 271, 78, 273, 83, 273, 88, 270, 93, 266, 95, 262, 101, 261, 105, 266, 107, 267, 112, 270, 118, 270, 126, 269, 135, 269, 144, 263, 148, 262, 151, 252, 151, 251, 147, 247, 147, 242, 147, 241, 151, 237, 151, 229, 150, 229, 146, 226, 145, 224, 139, 224, 134, 221, 133, 220, 126, 222, 120, 225, 112, 232, 106, 230, 99, 227, 98, 222, 95, 220, 91, 219, 82, 220, 74, 224, 66, 228, 61, 236, 56)
+
+[node name="Area2D" type="Area2D" parent="."]
+collision_layer = 0
+collision_mask = 16
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+position = Vector2(247, 99)
+scale = Vector2(1, 1.1912)
+shape = SubResource("RectangleShape2D_atses")
+
+[node name="ColorRect" type="ColorRect" parent="."]
+show_behind_parent = true
+offset_left = 153.0
+offset_top = 13.0
+offset_right = 365.0
+offset_bottom = 59.0
+color = Color(0, 0, 0, 0.384314)
+
+[node name="Label" type="Label" parent="."]
+offset_left = 155.0
+offset_top = 24.0
+offset_right = 364.0
+offset_bottom = 66.0
+theme_override_fonts/font = ExtResource("22_prrf7")
+theme_override_font_sizes/font_size = 17
+horizontal_alignment = 1

@@ -272,3 +272,4 @@ flat = true
 
 [connection signal="pressed" from="Button" to="." method="_on_button_pressed"]
 [connection signal="pressed" from="Node2/level1" to="." method="_on_level_1_pressed"]
+[connection signal="pressed" from="Node2/level2" to="." method="_on_level_2_pressed"]

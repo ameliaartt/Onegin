@@ -5,8 +5,9 @@ extends CanvasLayer
 @export var im2 = load("res://Accets/Carecters/dilogs/2.png")
 @export var im3 = load("res://Accets/Carecters/dilogs/2.png")
 @export var im4 = load("res://Accets/Carecters/dilogs/4.png")
+@export var im5 = load("res://Accets/Carecters/dilogs/210.png")
 
-var spritesOnegin = [im1, im2, im3, im4]
+var spritesOnegin = [im1, im2, im3, im4, im5]
 var spritesnep = []
 
 ## The action to use for advancing the dialogue
@@ -53,7 +54,7 @@ var dialogue_line: DialogueLine:
 		character_label.text = tr(dialogue_line.character, "dialogue")
 		
 
-		if (Global.sprite >= 1) and (Global.sprite <= 4):
+		if (Global.sprite >= 1) and (Global.sprite <= 5):
 			portrait.texture = spritesOnegin[Global.sprite - 1]
 		else:
 			portrait.texture = null

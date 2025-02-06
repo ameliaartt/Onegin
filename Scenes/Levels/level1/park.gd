@@ -25,11 +25,16 @@ func _process(delta: float) -> void:
 		num_num = 1
 		DialogueManager.show_dialogue_balloon(load("res://Scenes/dialogs/level1/main.dialogue"), "obed")
 		Global.goal = "Цель: идти в ресторан"
+		
+	if Global.soli == 1:
+		$Sprite2D6.visible = true
+	else:
+		$Sprite2D6.visible = false
 
 func _on_area_2d_body_entered(body: Node2D) -> void:
 	if Global.do_count == 4:
 		Global.goal = "Цель: найти графа"
-		Music.m2.stop()
+		Music.m1.stop()
 		Music.m4.play()
 		get_tree().change_scene_to_file("res://Scenes/Levels/level1/restaurant.tscn")
 	pass # Replace with function body.

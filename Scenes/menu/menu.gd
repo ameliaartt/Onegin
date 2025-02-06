@@ -20,6 +20,7 @@ func _process(delta):
 
 
 func _on_exit_pressed():
+	Global.save_game()
 	get_tree().quit()
 	pass
 
@@ -46,6 +47,13 @@ func _on_start_pressed():
 	Global.girls = 0
 	Global.dama = 0
 	Global.komik = 0
+	Global.anekdot = 0
+	Global.go_home = 0
+	Global.vine = 0
+	Global.poet = 0
+	Global.sholer = 0
+	Global.komik2 = 0
+	Global.dada = 0
 
 	pass # Replace with function body.
 

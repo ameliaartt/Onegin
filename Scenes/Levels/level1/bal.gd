@@ -22,9 +22,18 @@ func _process(delta: float) -> void:
 	
 	if Global.go_home == 1:
 		Global.goal = "Цель: Прочитать письмо"
-		Music.m1.stop()
+		Music.m2.stop()
 		Music.m3.play()
 		get_tree().change_scene_to_file("res://Scenes/Levels/level1/room_Onegin_night.tscn")
+		
+	if Global.vine == 1:
+		$Node/Node2/Sprite2D15.visible = false
+		
+	if Global.sholer == 2:
+		$Nps/Sprite2D.visible = false
+		
+	if Global.dama == 3:
+		get_tree().change_scene_to_file("res://Scenes/Levels/level1/bal2.tscn")
 
 
 

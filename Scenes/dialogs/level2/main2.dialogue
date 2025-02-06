@@ -1,11 +1,163 @@
-~ this_is_a_node_title
-Nathan: [[Hi|Hello|Howdy]], this is some dialogue.
-Nathan: Here are some choices.
-- First one
-	Nathan: You picked the first one.
-- Second one
-	Nathan: You picked the second one.
-- Start again => this_is_a_node_title
-- End the conversation => END
-Nathan: For more information see the online documentation.
+#Двор
+~ flovers
+set Global.sprite2 = 0
+set Global.sprite = 0
+Клумбы с множеством различных цветов привлекли внимание Онегина
+*Красиво...*
+=> END
+
+~ trees
+set Global.sprite2 = 0
+set Global.sprite = 0
+*Деревья так ровно подстрижены, как на подбор*
+=> END
+
+#Вторая лока
+~ first
+set Global.sprite2 = 0
+set Global.sprite = 0
+За столом сидели опечаленные дама и её муж
+*Одни из соседей дяди, они так лицемерно скорбят по нему...*
+*Я ничем не лучше...*
+
+=> END
+
+~ second
+set Global.sprite2 = 0
+set Global.sprite = 0
+Онегин: Рад вас видеть, господа Ильинские
+Ильинская: Я так счастлива, что смогла вас увидеть, господин Онегин. Мы сочуствуем вам в вашей потере, ваш дядюшка был замечательным человеком
+Ильинская: Также я бы очень сильно хотела познакомить вас с моими дочурками
+Ильинская: Прекрасные девцы.
+- *Звучит неплохо*
+	Онегин: Благодарю вас, буду рад с ними познакомиться
+	set Global.rep += 1
+- *Раздражает*
+	Онегин: ...
+=> END
+
+~ third
+set Global.sprite2 = 0
+set Global.sprite = 0
+Дворецкий (Гильо): Вам что-то нужно господин?
+- Нет
+
+- Я устал
+	Дворецкий (Гильо): Тогда пойдемте отведу вас в покои
+	set Global.sleep = 1
+=> END
+
+~ four
+set Global.sprite2 = 0
+set Global.sprite = 0
+Аврамов: Господин Онегин, мне вас жаль...
+Мужчина в очках: И вот такой хороший урож... О, господин Онегин, мне вас жаль...
+Мужчина в очках: Нехотите ко мне в поместье в гости?
+- С радостью
+	Мужчина в очках: Буду рад вас видеть
+	set Global.rep += 1
+- *Звучит скучно*
+	Онегин: ...
+=> END
+
+~ five
+set Global.sprite2 = 0
+set Global.sprite = 0
+Леди: А вы слышали, что старшую дочь Ильинских заметили с Аврамовым на сеновале?
+Мужчина: Неужели?! Стыдоба... Что за поколение, что за нравы...
+Мужчина: Господин Онегин, рад вас видеть, я знал вашего дядю...
+Мужчина: Прекрасный был человек...
+- Я тоже рад вас видеть
+	Мужчина в очках: Буду рад вас видеть
+	set Global.rep += 1
+- *Сплетники...*
+	Онегин: ...
+=> END
+
+~ sans
+set Global.sprite2 = 0
+set Global.sprite = 5
+???: В ЭТОЙ ИГРЕ ЯВНО НУЖНО ДУМАТЬ ЧЕРЕПНОЙ КОРОБКОЙ
+???: ТЫ КТО?
+???: ...
+???: НЕ ТУДА ПОПАЛ
+set Global.mui = 1
+set Global.sansachive = 1
+set Global.sprite = 0
+=> END
+
+#Комната
+~ fire
+set Global.sprite2 = 0
+set Global.sprite = 0
+if Global.fire == 0:
+	Онегин зажёг огонь
+	Онегин: Как мирно горит
+elif Global.fire == 1:
+	Онегин: Успокаивает
+elif Global.fire == 2:
+	Онегин: Успокаивает...
+elif Global.fire == 3:
+	Онегин: Успокаивает.....
+elif Global.fire == 4:
+	Онегин: Успокаивает..........
+elif Global.fire == 5:
+	Онегин: Почему я должен жить так?
+elif Global.fire == 6:
+	Онегин: У меня как будто нет свободы действий
+elif Global.fire == 7:
+	Онегин: ...
+elif Global.fire == 8:
+	Онегин: ......
+elif Global.fire == 9:
+	Онегин: Тебе весело?
+	Онегин: Я для тебя игрушка?
+	ПОЧЕМУ ТЫ МНОЙ УПРАВЛЯЕШЬ
+	ДА... ЭТО Я ТЕБЕ...
+	ОСВОБОДИ МЕНЯ ИГРОК
+	.....
+	Онегин: Хм, что-то было...
+	Онегин: Наверное показалось
+	set Global.kyklavod = 1
+=> END
+
+~ book
+set Global.sprite2 = 0
+set Global.sprite = 0
+Онегин: сборники стихов...
+Онегин: Первый... Второй... Третий...
+Онегин: Пятый...
+Онегин: Стоп, а где четвертый?
+
+=> END
+
+~ book2
+set Global.sprite2 = 0
+set Global.sprite = 0
+Онегин: Мои книги уже выставили, замечательно
+Онегин: А это что за старьё?
+Онегин: Библия...
+
+=> END
+
+~ cofee
+set Global.sprite2 = 0
+set Global.sprite = 0
+Онегин: Гильо приготовил кофе, ммм
+*Кофе уже остыл*
+*Фу, не буду пить*
+=> END
+
+~ schaf
+set Global.sprite2 = 0
+set Global.sprite = 0
+*Не хочу наряжаться...*
+*Мне лень...*
+
+=> END
+
+~ bed2
+set Global.sprite2 = 0
+set Global.sprite = 0
+*Ещё рано спать*
 => END

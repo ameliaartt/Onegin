@@ -1,4 +1,4 @@
-[gd_scene load_steps=34 format=3 uid="uid://bir3vgpyt5stq"]
+[gd_scene load_steps=36 format=3 uid="uid://bir3vgpyt5stq"]
 
 [ext_resource type="Texture2D" uid="uid://bfqubt36gfeaa" path="res://Accets/Rooms/bylvar/loc2.png" id="1_jfwkl"]
 [ext_resource type="Script" path="res://Scenes/Levels/level1/park.gd" id="1_l52xi"]
@@ -14,7 +14,6 @@
 [ext_resource type="Script" path="res://Scenes/dialogs/level1/most.gd" id="8_r86db"]
 [ext_resource type="Texture2D" uid="uid://dydll6iygnhyy" path="res://Accets/Carecters/NPC/men4.png" id="8_tg7td"]
 [ext_resource type="Resource" uid="uid://3rtn24c1nmcp" path="res://Scenes/dialogs/level1/main.dialogue" id="9_fuoxs"]
-[ext_resource type="Texture2D" uid="uid://cfcejpomlyjed" path="res://Accets/Carecters/NPC/girl3.png" id="9_l07th"]
 [ext_resource type="Script" path="res://Scenes/dialogs/level1/allei.gd" id="12_scf3l"]
 [ext_resource type="Texture2D" uid="uid://s7iqlg0igm8a" path="res://Accets/Rooms/bylvar/derevo.png" id="12_xhynf"]
 [ext_resource type="Texture2D" uid="uid://c34cgn207p8fe" path="res://Accets/Rooms/bylvar/chaika.png" id="13_1kra1"]
@@ -25,6 +24,8 @@
 [ext_resource type="Script" path="res://Scenes/dialogs/level1/soli.gd" id="16_8mon6"]
 [ext_resource type="PackedScene" uid="uid://bmw4vgma4s18m" path="res://Scenes/Player/onegin_ofic.tscn" id="16_hokj3"]
 [ext_resource type="Texture2D" uid="uid://dkymkmxbjkq7g" path="res://Accets/Rooms/bylvar/chaika3.png" id="25_c026b"]
+[ext_resource type="Script" path="res://Scenes/dialogs/level1/people.gd" id="26_bqv1e"]
+[ext_resource type="Texture2D" uid="uid://s1qyqxk1xxoq" path="res://Accets/Rooms/bylvar/krol.png" id="26_utkf8"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_oqg2k"]
 texture = ExtResource("3_vgukg")
@@ -1518,7 +1519,7 @@ physics_layer_0/collision_layer = 1
 sources/4 = SubResource("TileSetAtlasSource_oqg2k")
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_i7j0w"]
-size = Vector2(93.5, 55)
+size = Vector2(93.5, 122)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_cq55k"]
 size = Vector2(1276.28, 899.254)
@@ -1527,13 +1528,16 @@ size = Vector2(1276.28, 899.254)
 size = Vector2(562.75, 62)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_ovjuo"]
-size = Vector2(1762.5, 320)
+size = Vector2(1742, 235)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_qd7s4"]
 size = Vector2(307.5, 260.5)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_vdstk"]
 size = Vector2(215, 161)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_mumtv"]
+size = Vector2(289, 186)
 
 [node name="Park" type="Node2D"]
 script = ExtResource("1_l52xi")
@@ -1553,7 +1557,7 @@ metadata/_edit_lock_ = true
 position = Vector2(-28, 578)
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
-position = Vector2(-1122.75, -464.5)
+position = Vector2(-1122.75, -431)
 shape = SubResource("RectangleShape2D_i7j0w")
 
 [node name="nps" type="Node" parent="."]
@@ -1620,19 +1624,6 @@ texture = ExtResource("8_lrh3f")
 position = Vector2(-279.635, 69.0683)
 polygon = PackedVector2Array(-43.0208, -210.84, 7.17017, -210.84, 86.0415, -138.137, 125.477, -39.9869, 103.967, -3.63513, 46.6058, 3.63519, -35.8507, 10.9055, -93.2117, -7.27032, -139.818, -25.4462, -154.158, -61.7979, -139.818, -101.785, -114.722, -152.677, -82.4565, -181.759)
 
-[node name="CharacterBody2D7" type="CharacterBody2D" parent="nps"]
-position = Vector2(-1156, 444)
-scale = Vector2(0.278935, 0.27509)
-
-[node name="Sprite2D" type="Sprite2D" parent="nps/CharacterBody2D7"]
-position = Vector2(-175.668, -54.5276)
-scale = Vector2(1.96325, 2.11434)
-texture = ExtResource("9_l07th")
-
-[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="nps/CharacterBody2D7"]
-position = Vector2(-136.232, -29.0814)
-polygon = PackedVector2Array(-57.361, -239.922, 35.8506, -232.651, 86.0415, -138.137, 89.6266, -39.9869, 78.8714, -10.9055, 46.6058, 3.63519, -35.8507, 10.9055, -93.2117, -7.27032, -139.818, -25.4462, -129.062, -61.798, -139.818, -101.785, -114.722, -152.677, -89.6266, -210.84)
-
 [node name="predmet" type="Node" parent="."]
 
 [node name="CharacterBody2D" parent="predmet" instance=ExtResource("6_fjl1d")]
@@ -1667,7 +1658,7 @@ dialogue_start = "allei"
 metadata/_edit_group_ = true
 
 [node name="CollisionShape2D2" type="CollisionShape2D" parent="predmet/Area2D3"]
-position = Vector2(-594.75, 711)
+position = Vector2(-640, 753.5)
 shape = SubResource("RectangleShape2D_ovjuo")
 
 [node name="CharacterBody2D2" type="CharacterBody2D" parent="predmet"]
@@ -1776,6 +1767,23 @@ texture = ExtResource("14_hrdkr")
 position = Vector2(573, 430)
 scale = Vector2(2.29267, 2.15158)
 texture = ExtResource("25_c026b")
+
+[node name="Sprite2D6" type="Sprite2D" parent="."]
+position = Vector2(-569, -239)
+scale = Vector2(0.141738, 0.138664)
+texture = ExtResource("26_utkf8")
+
+[node name="Node" type="Node" parent="."]
+
+[node name="people" type="Area2D" parent="Node"]
+collision_layer = 16
+script = ExtResource("26_bqv1e")
+dialogue_resource = ExtResource("9_fuoxs")
+dialogue_start = "people"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Node/people"]
+position = Vector2(-358.5, 143)
+shape = SubResource("RectangleShape2D_mumtv")
 
 [connection signal="body_entered" from="Area2D" to="." method="_on_area_2d_body_entered"]
 [connection signal="pressed" from="Onegin1/Camera2D/Button" to="." method="_on_button_pressed"]

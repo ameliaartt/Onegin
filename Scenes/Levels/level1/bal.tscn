@@ -1,4 +1,4 @@
-[gd_scene load_steps=51 format=3 uid="uid://dqojqfyt8aeol"]
+[gd_scene load_steps=58 format=3 uid="uid://dqojqfyt8aeol"]
 
 [ext_resource type="Script" path="res://Scenes/Levels/level1/bal.gd" id="1_6qkns"]
 [ext_resource type="Texture2D" uid="uid://cq232sfulm8k2" path="res://Accets/Rooms/photo_2024-02-04_18-58-27.jpg" id="1_7v1ar"]
@@ -35,8 +35,15 @@
 [ext_resource type="Texture2D" uid="uid://b2smsjxe3h2n6" path="res://Accets/Rooms/restaurant/food1.png" id="23_8g7fr"]
 [ext_resource type="Texture2D" uid="uid://1jqbuankvien" path="res://Accets/Rooms/bal/bokal.png" id="24_4rseh"]
 [ext_resource type="Texture2D" uid="uid://chu6rb7c72aqc" path="res://Accets/Carecters/NPC/men17.png" id="24_l3fkm"]
-[ext_resource type="Texture2D" uid="uid://b4lrv2j0bnv4a" path="res://Accets/Carecters/NPC/girl1.png" id="24_njrdg"]
-[ext_resource type="Texture2D" uid="uid://1puxeel42n3s" path="res://Accets/Carecters/NPC/girl4.png" id="25_au6xh"]
+[ext_resource type="Script" path="res://Scenes/dialogs/level1/polit.gd" id="38_ayumm"]
+[ext_resource type="Script" path="res://Scenes/dialogs/level1/food.gd" id="38_kw5a7"]
+[ext_resource type="Script" path="res://Scenes/dialogs/level1/sholer.gd" id="39_b11n7"]
+[ext_resource type="Script" path="res://Scenes/dialogs/level1/dama_2.gd" id="39_bx8se"]
+[ext_resource type="Script" path="res://Scenes/dialogs/level1/poet.gd" id="39_ln7gq"]
+[ext_resource type="Resource" uid="uid://3rtn24c1nmcp" path="res://Scenes/dialogs/level1/main.dialogue" id="39_m10ss"]
+[ext_resource type="Texture2D" uid="uid://fgbvxbr087p3" path="res://Accets/Rooms/bal/coins.png" id="41_6esoh"]
+[ext_resource type="Script" path="res://Scenes/dialogs/level1/komik_2.gd" id="41_m5bxe"]
+[ext_resource type="Texture2D" uid="uid://br1t0mh3dgil7" path="res://Accets/Rooms/bal/cart.png" id="42_oy04f"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_3elhg"]
 texture = ExtResource("1_7v1ar")
@@ -1533,7 +1540,7 @@ sources/4 = SubResource("TileSetAtlasSource_3elhg")
 size = Vector2(88, 98.375)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_pnkni"]
-size = Vector2(314, 102)
+size = Vector2(280, 102)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_ufsbq"]
 size = Vector2(300.5, 224)
@@ -1545,16 +1552,16 @@ size = Vector2(682, 224)
 size = Vector2(167, 123)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_yt3ir"]
-size = Vector2(307, 155)
+size = Vector2(362, 155)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_03roo"]
 size = Vector2(198, 95)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_5bfrv"]
-size = Vector2(291.5, 148)
+size = Vector2(286, 203)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_qis2o"]
-size = Vector2(149, 131.5)
+size = Vector2(163, 169.5)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_6vc1q"]
 size = Vector2(283, 187)
@@ -1643,7 +1650,7 @@ scale = Vector2(0.236505, 0.238426)
 texture = ExtResource("8_3ga5r")
 
 [node name="CharacterBody2D5" type="CharacterBody2D" parent="Nps"]
-position = Vector2(558, -193)
+position = Vector2(267, -224)
 metadata/_edit_group_ = true
 
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Nps/CharacterBody2D5"]
@@ -1655,7 +1662,7 @@ scale = Vector2(0.236505, 0.238426)
 texture = ExtResource("9_e35vo")
 
 [node name="CharacterBody2D6" type="CharacterBody2D" parent="Nps"]
-position = Vector2(89, 42)
+position = Vector2(93, 63)
 metadata/_edit_group_ = true
 
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Nps/CharacterBody2D6"]
@@ -1704,7 +1711,7 @@ position = Vector2(-279.635, 69.0683)
 polygon = PackedVector2Array(-43.0208, -210.84, 7.17017, -210.84, 86.0415, -138.137, 125.477, -39.9869, 103.967, -3.63513, 118.307, 170.853, -17.9253, 218.11, -150.573, 159.948, -139.818, -25.4462, -154.158, -61.7979, -139.818, -101.785, -114.722, -152.677, -82.4565, -181.759)
 
 [node name="CharacterBody2D15" type="CharacterBody2D" parent="Nps"]
-position = Vector2(388, 431)
+position = Vector2(417, 458)
 metadata/_edit_group_ = true
 
 [node name="Sprite2D" type="Sprite2D" parent="Nps/CharacterBody2D15"]
@@ -1741,21 +1748,14 @@ position = Vector2(329.375, 146.5)
 scale = Vector2(0.236505, 0.238426)
 texture = ExtResource("16_evmco")
 
-[node name="CharacterBody2D12" type="CharacterBody2D" parent="Nps"]
-position = Vector2(-632, -53)
-metadata/_edit_group_ = true
-
-[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Nps/CharacterBody2D12"]
-polygon = PackedVector2Array(326, 154, 321, 158, 316, 163, 318, 182, 324, 188, 325, 198, 337, 197, 342, 191, 357, 187, 359, 178, 347, 159, 355, 147, 359, 133, 356, 117, 339, 101, 316, 105, 304, 117, 306, 141, 322, 157)
-
-[node name="Sprite2D" type="Sprite2D" parent="Nps/CharacterBody2D12"]
-position = Vector2(327.821, 146.5)
+[node name="Sprite2D" type="Sprite2D" parent="Nps"]
+position = Vector2(-304.179, 93.5)
 scale = Vector2(0.227256, 0.238426)
 texture = ExtResource("17_7wc3c")
 flip_h = true
 
 [node name="CharacterBody2D14" type="CharacterBody2D" parent="Nps"]
-position = Vector2(285, -46)
+position = Vector2(703, 574)
 metadata/_edit_group_ = true
 
 [node name="Sprite2D" type="Sprite2D" parent="Nps/CharacterBody2D14"]
@@ -1768,7 +1768,7 @@ position = Vector2(-5, 1)
 polygon = PackedVector2Array(-29, -36, -24, -58, 2, -68, 20, -64, 33, -49, 13, -12, 19, 1, 13, 27, 12, 37, 9, 41, -11, 41, -17, 31, -28, 27, -30, 11, -21, -10, -20, -14)
 
 [node name="CharacterBody2D19" type="CharacterBody2D" parent="Nps"]
-position = Vector2(405, -64)
+position = Vector2(820, 523)
 metadata/_edit_group_ = true
 
 [node name="Sprite2D" type="Sprite2D" parent="Nps/CharacterBody2D19"]
@@ -1793,17 +1793,16 @@ scale = Vector2(0.227256, 0.238426)
 texture = ExtResource("20_hbl8l")
 
 [node name="CharacterBody2D16" type="CharacterBody2D" parent="Nps"]
-position = Vector2(348, 332)
+position = Vector2(512, 424)
 metadata/_edit_group_ = true
 
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Nps/CharacterBody2D16"]
-polygon = PackedVector2Array(328, 112, 341, 103, 355, 104, 371, 113, 377, 130, 362, 143, 356, 151, 362, 156, 360, 182, 353, 190, 352, 200, 326, 188, 313, 177, 328, 167, 330, 154, 322, 164, 313, 162, 311, 152, 318, 147, 319, 136, 321, 126)
+polygon = PackedVector2Array(309, 106, 326, 91, 347, 96, 368, 123, 368, 139, 375, 150, 370, 165, 368, 183, 343, 200, 324, 197, 317, 158, 322, 143, 314, 136, 302, 121)
 
 [node name="Sprite2D" type="Sprite2D" parent="Nps/CharacterBody2D16"]
 position = Vector2(342.58, 142.065)
 scale = Vector2(0.265128, 0.26639)
 texture = ExtResource("21_g2g8t")
-flip_h = true
 
 [node name="CharacterBody2D18" type="CharacterBody2D" parent="Nps"]
 position = Vector2(884, 331)
@@ -1853,44 +1852,6 @@ polygon = PackedVector2Array(326, 154, 321, 158, 316, 163, 318, 182, 324, 188, 3
 position = Vector2(332, 147)
 scale = Vector2(0.236505, 0.238426)
 texture = ExtResource("24_l3fkm")
-
-[node name="CharacterBody2D23" type="CharacterBody2D" parent="Nps"]
-position = Vector2(582, 245)
-metadata/_edit_group_ = true
-
-[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Nps/CharacterBody2D23"]
-polygon = PackedVector2Array(326, 154, 321, 158, 302, 168, 308, 185, 317, 192, 325, 198, 345, 196, 358, 190, 362, 180, 363, 172, 342, 155, 367, 156, 370, 138, 368, 122, 336, 95, 324, 96, 295, 134, 298, 154, 322, 157)
-
-[node name="Sprite2D" type="Sprite2D" parent="Nps/CharacterBody2D23"]
-position = Vector2(335, 128)
-scale = Vector2(0.300255, 0.288568)
-texture = ExtResource("24_njrdg")
-
-[node name="CharacterBody2D24" type="CharacterBody2D" parent="Nps"]
-position = Vector2(777, 487)
-metadata/_edit_group_ = true
-
-[node name="Sprite2D" type="Sprite2D" parent="Nps/CharacterBody2D24"]
-position = Vector2(-9.99997, -16)
-scale = Vector2(0.250705, 0.256704)
-texture = ExtResource("25_au6xh")
-
-[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Nps/CharacterBody2D24"]
-position = Vector2(-5, 1)
-polygon = PackedVector2Array(-29, -36, -24, -58, 2, -68, 20, -64, 33, -49, 13, -12, 19, 1, 13, 27, 12, 37, 9, 41, -11, 41, -17, 31, -28, 27, -30, 11, -21, -10, -20, -14)
-
-[node name="CharacterBody2D25" type="CharacterBody2D" parent="Nps"]
-position = Vector2(777, 487)
-metadata/_edit_group_ = true
-
-[node name="Sprite2D" type="Sprite2D" parent="Nps/CharacterBody2D25"]
-position = Vector2(-9.99997, -16)
-scale = Vector2(0.250705, 0.256704)
-texture = ExtResource("25_au6xh")
-
-[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Nps/CharacterBody2D25"]
-position = Vector2(-5, 1)
-polygon = PackedVector2Array(-29, -36, -24, -58, 2, -68, 20, -64, 33, -49, 13, -12, 19, 1, 13, 27, 12, 37, 9, 41, -11, 41, -17, 31, -28, 27, -30, 11, -21, -10, -20, -14)
 
 [node name="Onegin1" parent="." instance=ExtResource("19_a7su4")]
 position = Vector2(1227, 163)
@@ -1968,10 +1929,12 @@ position = Vector2(-290, 70)
 
 [node name="CharacterBody2D2" parent="Node" instance=ExtResource("10_ty6mh")]
 position = Vector2(-153, -94)
+metadata/_edit_lock_ = true
 
 [node name="CharacterBody2D3" type="CharacterBody2D" parent="Node"]
 top_level = true
 light_mask = 8
+position = Vector2(2, 0)
 metadata/_edit_group_ = true
 
 [node name="Sprite2D" type="Sprite2D" parent="Node/CharacterBody2D3"]
@@ -2123,16 +2086,23 @@ texture = ExtResource("22_btlqw")
 [node name="food" type="Area2D" parent="Node2"]
 position = Vector2(-249, 521)
 collision_layer = 16
+script = ExtResource("38_kw5a7")
+dialogue_resource = ExtResource("39_m10ss")
+dialogue_start = "food"
 metadata/_edit_group_ = true
 metadata/_edit_lock_ = true
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Node2/food"]
-position = Vector2(147, 41)
+position = Vector2(164, 41)
 shape = SubResource("RectangleShape2D_pnkni")
+metadata/_edit_lock_ = true
 
 [node name="eaters" type="Area2D" parent="Node2"]
 position = Vector2(76, 519)
 collision_layer = 16
+script = ExtResource("38_ayumm")
+dialogue_resource = ExtResource("39_m10ss")
+dialogue_start = "eaters"
 metadata/_edit_group_ = true
 metadata/_edit_lock_ = true
 
@@ -2142,6 +2112,9 @@ shape = SubResource("RectangleShape2D_pnkni")
 
 [node name="polit" type="Area2D" parent="Node2"]
 collision_layer = 16
+script = ExtResource("38_ayumm")
+dialogue_resource = ExtResource("39_m10ss")
+dialogue_start = "polit"
 metadata/_edit_group_ = true
 metadata/_edit_lock_ = true
 
@@ -2152,6 +2125,9 @@ shape = SubResource("RectangleShape2D_ufsbq")
 [node name="dancers" type="Area2D" parent="Node2"]
 position = Vector2(281, 78)
 collision_layer = 16
+script = ExtResource("38_ayumm")
+dialogue_resource = ExtResource("39_m10ss")
+dialogue_start = "dancers"
 metadata/_edit_group_ = true
 metadata/_edit_lock_ = true
 
@@ -2160,8 +2136,11 @@ position = Vector2(331, 102)
 shape = SubResource("RectangleShape2D_m6h5l")
 
 [node name="dama2" type="Area2D" parent="Node2"]
-position = Vector2(340, 362)
+position = Vector2(374, 385)
 collision_layer = 16
+script = ExtResource("39_bx8se")
+dialogue_resource = ExtResource("39_m10ss")
+dialogue_start = "dama2"
 metadata/_edit_group_ = true
 metadata/_edit_lock_ = true
 
@@ -2171,16 +2150,22 @@ shape = SubResource("RectangleShape2D_fmeax")
 
 [node name="players" type="Area2D" parent="Node2"]
 collision_layer = 16
+script = ExtResource("38_ayumm")
+dialogue_resource = ExtResource("39_m10ss")
+dialogue_start = "players"
 metadata/_edit_group_ = true
 metadata/_edit_lock_ = true
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Node2/players"]
-position = Vector2(-64.5, -51.5)
+position = Vector2(-37, -51.5)
 shape = SubResource("RectangleShape2D_yt3ir")
 
 [node name="sholer" type="Area2D" parent="Node2"]
 position = Vector2(32, 11)
 collision_layer = 16
+script = ExtResource("39_b11n7")
+dialogue_resource = ExtResource("39_m10ss")
+dialogue_start = "sholer"
 metadata/_edit_group_ = true
 metadata/_edit_lock_ = true
 
@@ -2189,37 +2174,87 @@ position = Vector2(-192, 89.5)
 shape = SubResource("RectangleShape2D_03roo")
 
 [node name="poet" type="Area2D" parent="Node2"]
-metadata/_edit_lock_ = true
+position = Vector2(430, 608)
+collision_layer = 16
+script = ExtResource("39_ln7gq")
+dialogue_resource = ExtResource("39_m10ss")
+dialogue_start = "poet"
 metadata/_edit_group_ = true
+metadata/_edit_lock_ = true
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Node2/poet"]
-position = Vector2(347.25, -54)
+position = Vector2(350, -81.5)
 shape = SubResource("RectangleShape2D_5bfrv")
 
 [node name="komik2" type="Area2D" parent="Node2"]
-position = Vector2(108, 21)
+position = Vector2(-178, -4)
+collision_layer = 16
+script = ExtResource("41_m5bxe")
+dialogue_resource = ExtResource("39_m10ss")
+dialogue_start = "komik2"
 metadata/_edit_group_ = true
 metadata/_edit_lock_ = true
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Node2/komik2"]
-position = Vector2(779.5, -63.75)
+position = Vector2(772.5, -44.75)
 shape = SubResource("RectangleShape2D_qis2o")
 
 [node name="ymnue" type="Area2D" parent="Node2"]
-metadata/_edit_lock_ = true
+position = Vector2(-7, -25)
+collision_layer = 16
+script = ExtResource("38_ayumm")
+dialogue_resource = ExtResource("39_m10ss")
+dialogue_start = "ymnue"
 metadata/_edit_group_ = true
+metadata/_edit_lock_ = true
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Node2/ymnue"]
 position = Vector2(-201.5, 320.5)
 shape = SubResource("RectangleShape2D_6vc1q")
 
 [node name="women" type="Area2D" parent="Node2"]
-metadata/_edit_lock_ = true
+collision_layer = 16
+script = ExtResource("38_ayumm")
+dialogue_resource = ExtResource("39_m10ss")
+dialogue_start = "women"
 metadata/_edit_group_ = true
+metadata/_edit_lock_ = true
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Node2/women"]
 position = Vector2(1284.75, 481.25)
 shape = SubResource("RectangleShape2D_x4h1t")
+
+[node name="Sprite2D2" type="Sprite2D" parent="."]
+top_level = true
+position = Vector2(-84, -79)
+scale = Vector2(0.186728, 0.160088)
+texture = ExtResource("41_6esoh")
+
+[node name="Sprite2D3" type="Sprite2D" parent="."]
+top_level = true
+position = Vector2(-25, -80)
+scale = Vector2(0.186728, 0.160088)
+texture = ExtResource("41_6esoh")
+
+[node name="Sprite2D4" type="Sprite2D" parent="."]
+top_level = true
+position = Vector2(-228, 86)
+scale = Vector2(0.186728, 0.160088)
+texture = ExtResource("41_6esoh")
+
+[node name="Sprite2D5" type="Sprite2D" parent="."]
+top_level = true
+position = Vector2(-191, 86)
+rotation = 1.06465
+scale = Vector2(0.229001, 0.276865)
+texture = ExtResource("42_oy04f")
+
+[node name="Sprite2D6" type="Sprite2D" parent="."]
+top_level = true
+position = Vector2(-64, -77)
+rotation = 1.06465
+scale = Vector2(0.229001, 0.276865)
+texture = ExtResource("42_oy04f")
 
 [connection signal="body_entered" from="Area2D" to="." method="_on_area_2d_body_entered"]
 [connection signal="pressed" from="Onegin1/Camera2D/Button" to="." method="_on_button_pressed"]

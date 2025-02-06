@@ -1,0 +1,38 @@
+[gd_scene load_steps=4 format=3 uid="uid://da8ousxl2ic7j"]
+
+[ext_resource type="Script" path="res://Scenes/Levels/level2/glava_2.gd" id="1_p55r8"]
+[ext_resource type="Texture2D" uid="uid://bq66mmqgihby4" path="res://Accets/Menu/photo_2024-10-05_22-06-07.jpg" id="2_evy2t"]
+[ext_resource type="FontFile" uid="uid://hb5j7ekhv0q0" path="res://Accets/Srift/ofont.ru_Ekaterina Velikaya Two.ttf" id="3_nc1x8"]
+
+[node name="Voluem1" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_p55r8")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(577, 319)
+scale = Vector2(0.961475, 0.777144)
+texture = ExtResource("2_evy2t")
+
+[node name="Label" type="Label" parent="."]
+layout_mode = 0
+offset_left = 124.0
+offset_top = 247.0
+offset_right = 719.0
+offset_bottom = 399.0
+theme_override_fonts/font = ExtResource("3_nc1x8")
+theme_override_font_sizes/font_size = 88
+text = "Глава вторая"
+
+[node name="Button" type="Button" parent="."]
+layout_mode = 0
+offset_left = -2.0
+offset_right = 1162.0
+offset_bottom = 651.0
+flat = true
+
+[connection signal="pressed" from="Button" to="." method="_on_button_pressed"]
